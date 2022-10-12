@@ -4,12 +4,16 @@
     box-sizing: 0px;
 }
 
-
 body{
     background-color: white;
     position: relative;
     min-height: 100vh;
     max-width: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 form{
