@@ -34,8 +34,16 @@ header{
 }
 
 .logo img{
-    height: 65px;
+    height: 50px;
     margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: gold;
 }
 
 .nombre-empresa{
@@ -137,6 +145,7 @@ footer{
     padding-top:20px;
     padding-bottom:20px;
     margin-left: 15%;
+    
 }
 
 .pie-pagina .grupo1 .box h2{
@@ -158,6 +167,7 @@ footer{
     line-height: 50px;
     color: white;
     margin-right: 10px;
+    background-color: rgb(60, 60, 193);
     text-align: center;
     transition: all 300ms ease;
 }
@@ -168,7 +178,7 @@ footer{
 
 .pie-pagina .grupo2{
     background-color: #004A87;
-    text-align: center;
+    text-align: right;
     color: white;
 }
 
