@@ -129,6 +129,9 @@ body{
     background-image: url(../img/MarCaribe.jpg);
 }
 
+.tarjeta__Cienaga{
+    background-image:url(../img/CienagaGrande.jpg) ;
+}
 .contenido{
     display: flex;
     flex-direction: column;
