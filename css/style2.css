@@ -2,7 +2,7 @@
 *{
     padding: 0%;
     margin: 0%;
-    box-sizing: 0px;
+    box-sizing: content-box;
 }
 
 header{
@@ -122,6 +122,23 @@ th{
 
 #der{
     border-top-right-radius: 10px;
+}
+
+.edificios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.tarjeta{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px;
+}
+
+.tarjeta__Sierra{
 }
 
 
