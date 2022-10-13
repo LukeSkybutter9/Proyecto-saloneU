@@ -5,6 +5,15 @@
     box-sizing: content-box;
 }
 
+h3{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 header{
     position:fixed;
     width: 100%;
@@ -34,16 +43,13 @@ header{
 }
 
 .logo img{
-    height: 50px;
+    height: 60px;
     margin-right: 10px;
 }
-nav a{
-    font-weight: 600;
-    padding-right: 10px;
-}
 
-nav a:hover{
-    color: gold;
+nav a h3{
+    font-weight: normal;
+    font-family: Roboto;
 }
 
 .nombre-empresa{
@@ -66,20 +72,20 @@ nav div a{
 
 .conteBotones{
     display: flex;
-    text-align: center;
-    padding: 15px 10px 15px 10px;
+    padding: 15px 10px 15px 20px;
 }
 
-.conteBotones:hover{
-    background-color: #085390;
+.conteBotones a h3{
+    padding-left: 5px;
+    float: right;
 }
 
-body{
-    font-family: Roboto,sans-serif; 
-    margin: 0;
-    min-height: 800px;
-    position: relative;
+.conteBotones:hover a{
+    color:#c08e2d;
 }
+
+
+/*---------------------TABLAS STYLES----------------------------*/
 
 a{
     text-decoration: none;
@@ -106,6 +112,7 @@ th{
     margin-right: 20%;
 }
 
+
 .titulo{
     margin-top: 5%;
     display: flex;
@@ -124,11 +131,31 @@ th{
     border-top-right-radius: 10px;
 }
 
+
+body{
+    font-family: Stone Humanist SC;
+    min-height: 800px;
+    position: relative;
+}
+
 .edificios{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-top: 10%;
     margin-left: 10%;
+    margin-right: 10%;
+}
+
+.edificios a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edificios a h1{
+    color: #c08e2d;
+    margin-bottom: 5px;
 }
 
 .tarjeta{
@@ -136,11 +163,52 @@ th{
     height: 200px;
     border-radius: 10px;
     box-shadow: 3px 3px 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
 }
 
 .tarjeta__Sierra{
+    background-image: url(../img/SierraNevada.jpg);
+
 }
 
+.tarjeta__mCaribe{
+    background-image: url(../img/MarCaribe.jpg);
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+    background:rgba(1, 1, 1, 0.5);
+    transition: 0.4s;
+}
+
+
+.tarjeta:hover{
+    transform: scale(1.1);
+}
+
+
+.contenInfo{
+    display: flex;
+    gap: 20px;
+}
+
+.contenInfo h3{
+    font-size: 25px;
+}
+
+#infoDer{
+    float: right;
+}
 
 
 footer{
@@ -190,7 +258,7 @@ footer{
 }
 
 .pie-pagina .grupo1 .red-social a:hover{
-    color: gold;
+    color: #c08e2d;
 }
 
 .pie-pagina .grupo2{
