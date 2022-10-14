@@ -1,4 +1,4 @@
-/* ----------------Header----------------------*/
+
 *{
     padding: 0%;
     margin: 0%;
@@ -14,86 +14,22 @@ a{
     color: black;
 }
 
-header{
-    position:fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    display: flex;
-    min-height: 70px;
-    background-color: #004A87;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-family: Stone Humanist SC;
-    box-shadow: 1px 1px 5px ;
-}
-
-#bloqIzq{
-    margin-left: 30px;
-}
-
-#bloqDer{
-    margin-right: 30px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img{
-    height: 60px;
-    margin-right: 10px;
-}
-
-nav a h3{
-    font-weight: normal;
-    font-family: Roboto;
-}
-
-.nombre-empresa{
-    color:white;
-}
-
-#nombreArriba{
-    font-size: 15px;
-    font-weight: normal;
-}
-
-.opciones{
-    display: flex;
-}
-
-nav div a{
-    font-weight: 600;
-    color: white;
-}
-
-.conteBotones{
-    display: flex;
-    padding: 15px 10px 15px 20px;
-}
-
-.conteBotones a h3{
-    padding-left: 5px;
-    float: right;
-}
-
-.conteBotones:hover a{
-    color:#c08e2d;
-}
+/* --------------------------Body----------------------*/
 
 body{
     font-family: Stone Humanist SC;
-    min-height: 1000px;
+    min-height: 900px;
     position: relative;
+}
+
+.supahcontenedor{
+    padding-top:5% ;
 }
 
 .edificios{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -132,6 +68,7 @@ body{
 .tarjeta__Cienaga{
     background-image:url(../img/CienagaGrande.jpg) ;
 }
+
 .contenido{
     display: flex;
     flex-direction: column;
@@ -163,67 +100,8 @@ body{
 #infoDer{
     float: right;
 }
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
-footer{
-    overflow: hidden;
-    width: 100%;
-    background-color: #004A87;
-    position: absolute;
-    bottom: 0;
-    font-family: Stone Humanist SC;
-    box-shadow: 1px 1px 10px;
-}
-
-.grupo1{
-    width: 100%;
-    max-width: 700;
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-gap: 50px;
-    padding-top:20px;
-    padding-bottom:20px;
-    margin-left: 15%;
-}
-
-.pie-pagina .grupo1 .box h2{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie-pagina .grupo1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-
-}
-.pie-pagina .grupo1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 50px;
-    height: 50px; 
-    line-height: 50px;
-    color: white;
-    margin-right: 10px;
-    background-color: rgb(60, 60, 193);
-    text-align: center;
-    transition: all 300ms ease;
-}
-
-.pie-pagina .grupo1 .red-social a:hover{
-    color: #c08e2d;
-}
-
-.pie-pagina .grupo2{
-    background-color: #004A87;
-    text-align: right;
-    color: white;
-}
-
-.pie-pagina .grupo2 small{
-    font-size: 15px;
-
-}
 
 /*---------------------TABLAS STYLES----------------------------*/
 
