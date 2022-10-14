@@ -1,0 +1,96 @@
+/* --------------------------Header----------------------*/
+header{
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    min-height: 70px;
+    background-color: #004A87;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: Stone Humanist SC;
+    box-shadow: 1px 1px 5px ;
+}
+
+#bloqIzq{
+    margin-left: 30px;
+}
+
+#bloqDer{
+    margin-right: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a h3{
+    font-weight: normal;
+    font-family: Roboto;
+}
+
+.nombre-empresa{
+    color:white;
+}
+
+#nombreArriba{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.opciones{
+    display: flex;
+}
+
+nav div a{
+    font-weight: 600;
+    color: white;
+}
+
+.conteBotones{
+    display: flex;
+    padding: 15px 10px 15px 20px;
+}
+
+.conteBotones a h3{
+    padding-left: 5px;
+    float: right;
+}
+
+.conteBotones:hover a{
+    color:#c08e2d;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*--------------------------FUENTES-----------------------------*/
+
+@font-face {/*-------Antaro---------*/
+    font-family: Antaro;
+    src: url(../fuentes/Antaro.ttf);
+}
+
+@font-face {/*-------Stone Humanist SC---------*/
+    font-family: Stone Humanist SC;
+    src: url(../fuentes/StoneSansOSITCTTMedium.ttf);
+}
+
+@font-face {/*-------ITCMedium---------*/
+    font-family: ITCMedium;
+    src: url(../fuentes/StoneSansOSITCTTMedium.ttf);
+}
+
+@font-face {/*-------Roboto---------*/
+    font-family: Roboto;
+    src: url(../fuentes/roboto.regular.ttf);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
