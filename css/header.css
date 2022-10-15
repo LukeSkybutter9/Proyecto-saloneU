@@ -68,6 +68,17 @@ nav div a{
 .conteBotones:hover a{
     color:#c08e2d;
 }
+.conteBotones .boton{
+    background-color: #004A87;
+    padding: 16px;
+    font-size: 18.5px;
+    border: none;
+}
+.conteBotones .boton .links a{
+    display: block;
+    text-decoration: none;
+    padding: 13px;
+}
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
