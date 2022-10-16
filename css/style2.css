@@ -27,7 +27,7 @@ form{
 
 body{
     font-family: Stone Humanist SC;
-    min-height: 900px;
+    min-height: 1000px;
     position: relative;
 }
 
@@ -36,11 +36,21 @@ body{
 }
 
 .tituloEdi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloEdi h1{
     font-family: Roboto;
     margin-top: 5%;
     text-align: Center;
     color: #c08e2d;
     font-size: 25px;
+}
+
+.tituloEdi h2{
+    color: rgb(175, 163, 163);
 }
 
 .edificios{
@@ -126,8 +136,9 @@ th{
     margin-top: 3%;
     display: grid;
     grid-template-columns: 70% 30%;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
+    margin-bottom: 20%;
 }
 
 .tabla{
@@ -143,8 +154,8 @@ th{
     padding-top: 20%;
     padding: 20px;
     gap:20px;
-    background-color: rgb(246, 246, 246);
-    width: 100%;
+    background-color: #1562a1;
+    width: 75%;
 }
 
 .apartar h1{
@@ -153,8 +164,20 @@ th{
 
 
 #flexear input{
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
+    border: 1px solid grey;
+    font-family: Roboto;
+}
+
+#flexear input:focus{
+    border: 1px solid grey;
+}
+
+
+#flexear h2{
+    color: white;
+    font-size: 15px;
 }
 
 .formReserva{
@@ -180,14 +203,17 @@ th{
     justify-content: center;
     font-family: Stone Humanist SC;
     color:#c08e2d;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .titulo h2{
     color: rgb(175, 163, 163);
 }
 
-
+.tituloCod{
+    display: flex;
+    width: 100%;
+}
 
 #reservar{
     border-radius: 5px;
@@ -201,6 +227,10 @@ th{
 
 #reservar:hover{
     background-color: #1562a1;
+}
+
+#flexear textarea{
+    font-family: Roboto;
 }
 
 #izq{
