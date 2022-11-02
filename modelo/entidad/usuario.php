@@ -2,7 +2,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "adminsu";
+$dbname = "bddsu";
 
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 if(!$conn){
@@ -12,14 +12,14 @@ if(!$conn){
 $usuario = $_POST["usuario"];;
 $pass = $_POST["password"];
 
-$query = mysqli_query($conn,"SELECT * FROM login WHERE correo ='".$usuario."' and password'".$pass."'");
+$query = mysqli_query($conn,"SELECT * FROM usuario WHERE correo ='".$usuario."' and password ='".$pass."'");
 
 $nr = mysqli_num_rows($query);
 
 if($nr==1){
-    echo "Bienvenido: " .$nombre
+    header("Location: ../../vista/principal.html");
 }else{
-    ecjo "No ingresó."
+    header("Location: ../../vista/login.html");
 }
 
 
