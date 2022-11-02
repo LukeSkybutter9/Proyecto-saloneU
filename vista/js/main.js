@@ -1,4 +1,4 @@
-function entrar(){
+/*function entrar(){
     var user = document.getElementById('usuario').value;
     var contr = document.getElementById('contraseña').value;
 
@@ -12,4 +12,4 @@ function entrar(){
 function cerrarSesion(){
     alert("Cerrando Sesion!");
     window.location = "index.html";
-}
+}*/
