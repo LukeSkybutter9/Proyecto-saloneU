@@ -1,3 +1,7 @@
+<?php
+   $msg = $_GET['msg'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +35,7 @@
             <div id="titulo">LOGIN ESTUDIANTES</div>
             <div id="login">
                 <div id="derecho" id="columnear">
-                    <input type="text" name="usuario" class="inpt" id="usuario" placeholder="Código">
+                    <input type="text" name="codEstudiantil" class="inpt" id="usuario" placeholder="Código">
                     <input type="password" name="password" class="inpt" id="contraseña" placeholder="Contraseña">
                 </div>
             </div>
