@@ -19,12 +19,13 @@
             $_SESSION['ID_USUARIO'] = $user->getcodEdst();
             $_SESSION['NOMBRE_USUARIO'] = $user->getNombre();
             
-            if($user->esAdministrador() == 1){
+           /* if($user->esAdministrador() == 1){
                 header("Location: ../../vista/administradorUsuarios.php");                
             }else{
-                header("Location: ../../vista/tabata.php");
+                header("Location: ../../vista/principal.html");
             }
-
+            */
+            header("Location: ../../vista/principal.html");
         }else{
             //Si el usuario no existe se vuelve a mostrar el login
             header("Location: ../../vista/login.php");

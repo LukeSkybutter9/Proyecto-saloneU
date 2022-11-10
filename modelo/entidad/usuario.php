@@ -16,7 +16,7 @@ class Usuario
     public $sexo;
     public $administrador;
     
-    public function __construct($codEdst, $nombre, $correo, $password,$telefono, $fechaNac, $pesoKg, $administrador){
+    public function __construct($codEdst, $nombre, $correo, $password,$telefono, $fechaNac, $sexo, $administrador){
 
         $this->codEdst = $codEdst;
         $this->nombre = $nombre;
@@ -30,7 +30,7 @@ class Usuario
     
    // Métodos GET
     public function getcodEdst(){
-        return $this->id;
+        return $this->codEdst;
     }
 
     public function getNombre()
