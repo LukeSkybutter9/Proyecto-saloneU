@@ -18,16 +18,19 @@
             //Si el usuario fue encontrado, se guarda su ID en una sesión con $_SESSION
             $_SESSION['ID_USUARIO'] = $user->getcodEdst();
             $_SESSION['NOMBRE_USUARIO'] = $user->getNombre();
-            
+
            /* if($user->esAdministrador() == 1){
                 header("Location: ../../vista/administradorUsuarios.php");                
             }else{
                 header("Location: ../../vista/principal.html");
             }
             */
-            header("Location: ../../vista/principal.html");
+
+            header("Location: ../../vista/principal.php");
+            
         }else{
             //Si el usuario no existe se vuelve a mostrar el login
             header("Location: ../../vista/login.php");
         }
 
+?>

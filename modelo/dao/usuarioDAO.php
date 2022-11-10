@@ -9,7 +9,7 @@
 //Con require_once se incluye el archivo especificado, en este caso DataSource.php y 
 //Usuario.php
 require_once ("DataSource.php");  //La clase que permite conectarse a la Base de Datos
-require_once (__DIR__."/../entidad/usuario.php");
+require_once (__DIR__."/../entidad/Usuario.php");
 
 class UsuarioDAO {
      
@@ -24,7 +24,7 @@ class UsuarioDAO {
         //que cumpla con el correo y contraseña recibidos del login
         $data_table= $data_source->ejecutarConsulta("SELECT * FROM usuario WHERE codEdst =:codEdst AND password = :password",array(':codEdst'=>$codEdst,':password'=>$password));
 
-        $usuario=null;
+        /*$usuario=null;*/
         //Si $data_table retornó una fila, quiere decir que se encontro el usuario en la base de datos
         if(count($data_table)==1){
             
@@ -107,7 +107,7 @@ class UsuarioDAO {
       return $resultado;
     }
 
-    public function verUsuarioPorId($idUsuario){
+    public function verUsuarioPorId($codEdst){
         $data_source = new DataSource();
         
         $data_table = $data_source->ejecutarConsulta("SELECT * FROM usuario WHERE codEdst = :idUsuario", array(':idUsuario'=>$codEdst));
@@ -153,5 +153,5 @@ class UsuarioDAO {
 
 }
 
-
+?>
 

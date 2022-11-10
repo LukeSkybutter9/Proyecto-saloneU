@@ -146,7 +146,6 @@ th{
 }
 
 .apartar{
-    box-shadow: 1px 1px 5px rgb(98, 98, 98);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
