@@ -1,3 +1,7 @@
+<?php
+   session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +59,7 @@
                 </div>
                 
                 <div class="conteBotones">
-                    <a href="login.php" class="fa-solid fa-circle-user"><h3>Admin</h3></a>
+                    <a href="login.php" class="fa-solid fa-circle-user"><h3><?php echo $_SESSION['NOMBRE_USUARIO']?></h3></a>
                 </div>
             </nav>
         </div>
