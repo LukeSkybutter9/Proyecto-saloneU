@@ -19,6 +19,7 @@
             $_SESSION['ID_USUARIO'] = $user->getcodEdst();
             $_SESSION['NOMBRE_USUARIO'] = $user->getNombre();
 
+            header("Location: ../../vista/principal.html");
            /* if($user->esAdministrador() == 1){
                 header("Location: ../../vista/administradorUsuarios.php");                
             }else{
