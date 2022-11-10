@@ -4,7 +4,7 @@ require_once(__DIR__."/../../modelo/dao/UsuarioDAO.php");
         
 function autenticarUsuario($codEdst, $password){
         
-        $dao=new UsuarioDAO();
+        $dao = new UsuarioDAO();
         
         //Se llama al método autenticarUsuario que se encuentra en la clase
         //UsuarioDAO
@@ -46,3 +46,4 @@ function editarUsuario($usuario){
     $dao=new UsuarioDAO();
     $dao->editarUsuario($usuario);
 }
+?>
