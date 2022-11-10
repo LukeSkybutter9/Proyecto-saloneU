@@ -72,7 +72,7 @@
         </section>
     
         <section class="edificios">
-            <a href="sierraNevada.html">
+            <a href="sierraNevada.php">
                 <div class="tarjeta tarjeta__Sierra">
                     <div class="contenido">
                         <h1>Sierra Nevada</h1>
@@ -80,7 +80,7 @@
                 </div>
             </a>
     
-            <a href="cienagaGrande.html">
+            <a href="cienagaGrande.php">
                 <div class="tarjeta tarjeta__Cienaga">
                     <div class="contenido">
                         <h1>Ciénaga Grande</h1>
@@ -88,7 +88,7 @@
                 </div>
             </a>
     
-            <a href="marCaribe.html">
+            <a href="marCaribe.php">
                 <div id="fondo" class="tarjeta tarjeta__mCaribe">
                     <div class="contenido">
                         <h1>Mar Caribe</h1>
