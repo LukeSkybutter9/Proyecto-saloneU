@@ -1,8 +1,8 @@
 <?php
 
-//Esta clase POJO sirve para guardar los datos de un Usuario
+//Esta clase POJO sirve para guardar los datos de las Reservas
 //Por ejemplo, un objeto creado a partir de esta clase
-//tendrá guardado los datos de un usuario de la tabla Usuarios de la
+//tendrá guardado los datos de una Reserva de la tabla Reservas de la
 //base de datos
 
 class Reserva
@@ -19,107 +19,82 @@ class Reserva
 
         $this->idReserva = $idReserva;
         $this->fecha = $fecha;
-		$this->Usuario = $correo;
-		$this->Edificio = $password;
-        $this->Salon = $telefono;
-        $this->Estado = $fechaNac;
+		$this->idUsuario = $idUsuario;
+		$this->idEdificio = $idEdificio;
+        $this->idSalon = $idSalon;
+        $this->idEstado = $idEstado;
     }
     
    // Métodos GET
-    public function getcodEdst(){
-        return $this->codEdst;
+    public function getidReserva(){
+        return $this->idReserva;
     }
 
-    public function getNombre()
+    public function getfecha()
     {
-        return $this->nombre;
+        return $this->fecha;
     }
 
-    public function getCorreo()
+    public function getidUsuario()
     {
-        return $this->correo;
+        return $this->idUsuario;
     }
     
-     public function getPassword()
+     public function getidEdificio()
     {
-        return $this->password;
+        return $this->idEdificio;
     }
 
-	 public function getTelefono()
+	 public function getidSalon()
     {
-        return $this->telefono;
+        return $this->idSalon;
     }
 
-    public function getFechaNac()
+    public function getidEstado()
     {
-        return $this->fechaNac;
+        return $this->idEstado;
     }
 
-    public function getSexo()
+    public function setidReserva($idReserva)
     {
-        return $this->sexo;
-    }
-
-
-    public function esAdministrador(){
-        return $this->administrador;
-    }
-
-
-    public function setcodEdst($codEdst)
-    {
-        $this->codEdst = $codEdst;
+        $this->idReserva = $idReserva;
 
         return $this;
     }
 
     //Métodos SET
 
-    public function setNombre($nombre)
+    public function setfecha($fecha)
     {
-        $this->nombre = $nombre;
+        $this->fecha = $fecha;
 
         return $this;
     }
 
-    public function setCorreo($correo)
+    public function setidUsuario($idUsuario)
     {
-        $this->correo = $correo;
+        $this->idUsuario = $idUsuario;
 
         return $this;
     }
 
-    public function setPassword($password)
+    public function setidEdificio($idEdificio)
     {
-        $this->password = $password;
+        $this->idEdificio = $idEdificio;
 
         return $this;
     }
 
-    public function setTelefono($telefono)
+    public function setidSalon($idSalon)
     {
-        $this->telefono = $telefono;
+        $this->idSalon = $idSalon;
 
         return $this;
     }
 
-    public function setFechaNac($fechaNac)
+    public function setidEstado($idEstado)
     {
-        $this->getFechaNac = $fechaNac;
-
-        return $this;
-    }
-
-    public function setSexo($sexo)
-    {
-        $this->sexo = $sexo;
-
-        return $this;
-    }
-
-    public function setAdministrador($administrador)
-    {
-        $this->administrador = $administrador;
+        $this->idEstado = $idEstado;
 
         return $this;
     }
