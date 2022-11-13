@@ -15,14 +15,14 @@ class Reserva
     public $idEstado;
 
     
-    public function __construct($idReserva, $fecha, $correo, $password,$telefono, $fechaNac){
+    public function __construct($idReserva, $fecha, $idUsuario, $idEdificio,$idSalon, $idEstado){
 
         $this->idReserva = $idReserva;
-        $this->nombre = $fecha;
-		$this->correo = $correo;
-		$this->password = $password;
-        $this->telefono = $telefono;
-        $this->fechaNac = $fechaNac;
+        $this->fecha = $fecha;
+		$this->Usuario = $correo;
+		$this->Edificio = $password;
+        $this->Salon = $telefono;
+        $this->Estado = $fechaNac;
     }
     
    // Métodos GET
