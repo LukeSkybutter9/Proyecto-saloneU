@@ -1,5 +1,9 @@
 <?php
    session_start();
+    if (!isset($_SESSION['ID_USUARIO'])) {
+        header("Location: login.html");
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -221,11 +225,11 @@
                 <form action="" class="formReserva">
                     <div id="flexear">
                         <h2>Fecha y hora</h2>
-                        <input type="datetime-local" name="" id="fHora">
+                        <input type="datetime-local" name="fechaHora" id="fHora">
                     </div>
                     <div id="flexear">
                         <h2>Asunto  </h2>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                     </div>
                     <button id="reservar" value="reservar">RESERVAR</button>
                 </form>
