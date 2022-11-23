@@ -79,161 +79,33 @@
                     <thead>
                         <tr>
                             <th id="izq"># Salón</th>
-                            <th>Capacidad</th>
-                            <th id="der">Disponibilidad</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="">CGN-101</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-102</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-103</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-201</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-202</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-203</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-204</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-205</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-301</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-302</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-303</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-304</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGN-305</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-101</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-102</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-103</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-201</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-202</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-203</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-204</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-205</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-301</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-302</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-303</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-304</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">CGS-305</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                    </tbody>
                 </table>
             </div>
 
-            <div class="apartar">
-                <div class="tituloCod">
-                    <h1>Código: Admin</h1>
+            <form method="POST" action="../controlador/accion/act_reservar.php" class="formReserva">
+                <div class="apartar">
+                    <div class="tituloCod">
+                        <div id="flexear">
+                            <h1>Código: Admin</h1>
+                        </div>
+                    </div>
+                    <div id="flexear">
+                            <h2>Edificio</h2>
+                            <input type="text" name="nombreEdificio" id="" value="Cienaga Grande" readonly>
+                        </div>
+                        <div id="flexear">
+                            <h2>Fecha y hora</h2>
+                            <input type="datetime-local" name="fechaHora" id="fHora">
+                        </div>
+                        <div id="flexear">
+                            <h2>Asunto</h2>
+                            <textarea name="asunto" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button id="reservar" value="reservar">RESERVAR</button>
+                        </form>
                 </div>
-                <form action="" class="formReserva">
-                    <div id="flexear">
-                        <h2>Fecha y hora</h2>
-                        <input type="datetime-local" name="fechaHora" id="fHora">
-                    </div>
-                    <div id="flexear">
-                        <h2>Asunto  </h2>
-                        <textarea name="asunto" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <button id="reservar" value="reservar">RESERVAR</button>
-                </form>
-            </div>
         </section>
 
         <footer class="pie-pagina">

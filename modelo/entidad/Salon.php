@@ -5,7 +5,7 @@
 //tendrá guardado los datos de un Salon de la tabla salones de la
 //base de datos
 
-class Salones
+class Salon
 {
     public $idSalon;
     public $ubicacion;
