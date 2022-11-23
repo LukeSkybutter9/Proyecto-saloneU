@@ -97,7 +97,7 @@
                     </div>
                         <div id="flexear">
                             <h2>Edificio</h2>
-                            <input type="text" name="nombreEdificio" id="" value="Cienaga Grande" readonly>
+                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Cienaga Grande" readonly>
                         </div>
                         <div id="flexear">
                             <h2>Fecha y hora</h2>

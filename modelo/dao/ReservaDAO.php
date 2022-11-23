@@ -2,21 +2,23 @@
 
 require_once ("DataSource.php");  //La clase que permite conectarse a la Base de Datos
 require_once (__DIR__."/../entidad/Reserva.php");
+require_once (__DIR__."/../entidad/Salon.php");
+require_once (__DIR__."/../entidad/edificios.php");
 
 class ReservaDAO{
 
-    public function reservar(Reserva $reserva){
+    /*public function reservar(Reserva $reserva){
 
         $data_source = new DataSource();
 
         $stmt1 = "INSERT INTO reserva VALUES(NULL,)";
 
     }
-
+    */
     public function listarSalones($idEdificio){
         $data_source = new DataSource();
         
-        $data_table = $data_source->ejecutarConsulta("SELECT * FROM salon WHERE idEdificio = :idEdificio", Array(':idEdificio'=> $idEdificio));
+        $data_table = $data_source->ejecutarConsulta("SELECT * FROM salon WHERE idEdificio = :idEdificio", array(':idEdificio'=> $idEdificio));
 
         $salon=null;
         $salones=array();
@@ -37,7 +39,12 @@ class ReservaDAO{
     public function obtenerIdPorNombre($nombreEdificio){
         $data_source = new DataSource();
 
-        $idEdificio = $data_source->ejecutarConsulta("SELECT idEdificio FROM edificio WHERE nombre = :nombreEdificio", Array(':nombreEdificio'=>$nombreEdificio));
+        $idEdificio=NULL;
+
+        $data_table = $data_source->ejecutarConsulta("SELECT idEdificio FROM edificio WHERE nombre = :nombreEdificio", array(':nombreEdificio'=>$nombreEdificio));
+        if(count($data_table)==1){
+            $idEdificio = $data_table[0]["idEdificio"];
+        }
 
         return $idEdificio;
     }

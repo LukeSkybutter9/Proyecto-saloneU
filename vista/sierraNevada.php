@@ -3,7 +3,6 @@
     if (!isset($_SESSION['ID_USUARIO'])) {
         header("Location: login.html");
     }
-
 ?>
 
 
@@ -74,7 +73,7 @@
 
         <section class="contenedor">
             <div class="tabla">
-                <table id="example" class="display" style="width: 100%">
+                <table id="salonesRegistrados" class="display" style="width: 100%">
                     <thead>
                         <tr>
                             <th id="izq">ubicación</th>
@@ -95,7 +94,7 @@
                     </div>
                         <div id="flexear">
                             <h2>Edificio</h2>
-                            <input type="text" name="nombreEdificio" id="" value="Sierra Nevada" readonly>
+                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Sierra Nevada">
                         </div>
                         <div id="flexear">
                             <h2>Fecha y hora</h2>
@@ -136,7 +135,7 @@
             </div>
         </footer>
 
+        <script src="js/librerias/jquery-3.3.1.min.js"></script>
+        <script src="js/perfil.js"></script>
 </body>
-    <script src="perfil.js"></script>
-    <script src="js/librerias/jquery-3.3.1.min.js"></script>
 </html>
