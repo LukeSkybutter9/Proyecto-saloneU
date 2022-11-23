@@ -16,7 +16,7 @@ class ReservaDAO{
     public function listarSalones($idEdificio){
         $data_source = new DataSource();
         
-        $data_table = $data_source->ejecutarConsulta("SELECT * FROM salon WHERE idEdificio = $idEdificio", NULL);
+        $data_table = $data_source->ejecutarConsulta("SELECT * FROM salon WHERE idEdificio = :idEdificio", Array(':idEdificio'=> $idEdificio));
 
         $salon=null;
         $salones=array();
@@ -37,7 +37,7 @@ class ReservaDAO{
     public function obtenerIdPorNombre($nombreEdificio){
         $data_source = new DataSource();
 
-        $idEdificio = $data_source->ejecutarConsulta("SELECT idEdificio FROM edificio WHERE nombre = $nombreEdificio", NULL);
+        $idEdificio = $data_source->ejecutarConsulta("SELECT idEdificio FROM edificio WHERE nombre = :nombreEdificio", Array(':nombreEdificio'=>$nombreEdificio));
 
         return $idEdificio;
     }

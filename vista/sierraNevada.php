@@ -77,159 +77,37 @@
                 <table id="example" class="display" style="width: 100%">
                     <thead>
                         <tr>
-                            <th id="izq"># Salón</th>
-                            <th>Capacidad</th>
-                            <th id="der">Disponibilidad</th>
+                            <th id="izq">ubicación</th>
+                            <th id="izq">capacidad</th>
                         </tr>
-                    </tgead>
+                    </thead>
                     <tbody>
-                        <tr>
-                            <td><a href="">SNN-101</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-102</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-103</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-201</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-202</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-203</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-204</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-205</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-301</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-302</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-303</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-304</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNN-305</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-101</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-102</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-103</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-201</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-202</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-203</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-204</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-205</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-301</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-302</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-303</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-304</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">SNS-305</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
-            <div class="apartar">
-                <h1>Código: Admin</h1>
-                <form action="" class="formReserva">
-                    <div id="flexear">
-                        <h2>Fecha y hora</h2>
-                        <input type="datetime-local" name="" id="fHora">
+            <form method="POST" action="../controlador/accion/ajax_verSalones.php" class="formReserva">
+                <div class="apartar">
+                    <div class="tituloCod">
+                        <div id="flexear">
+                            <h1>Código: Admin</h1>
+                        </div>
                     </div>
-                    <div id="flexear">
-                        <h2>Asunto  </h2>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <button id="reservar" value="reservar">RESERVAR</button>
-                </form>
-            </div>
+                        <div id="flexear">
+                            <h2>Edificio</h2>
+                            <input type="text" name="nombreEdificio" id="" value="Sierra Nevada" readonly>
+                        </div>
+                        <div id="flexear">
+                            <h2>Fecha y hora</h2>
+                            <input type="datetime-local" name="fechaHora" id="fHora">
+                        </div>
+                        <div id="flexear">
+                            <h2>Asunto</h2>
+                            <textarea name="asunto" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button id="reservar" value="reservar">RESERVAR</button>
+                </div>
+            </form>
         </section>
 
         <footer class="pie-pagina">
@@ -259,4 +137,6 @@
         </footer>
 
 </body>
+    <script src="perfil.js"></script>
+    <script src="js/librerias/jquery-3.3.1.min.js"></script>
 </html>

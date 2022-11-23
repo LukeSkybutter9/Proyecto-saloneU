@@ -75,23 +75,27 @@
 
         <section class="contenedor">
             <div class="tabla">
-                <table id="example" class="display" style="width: 100%">
+                <table id="salonesRegistrados" id="example" class="display" style="width: 100%">
                     <thead>
                         <tr>
-                            <th id="izq"># Salón</th>
+                            <th id="izq">ubicación</th>
+                            <th id="izq">capacidad</th>
                         </tr>
                     </thead>
+                    <tbody>
+
+                    </tbody>
                 </table>
             </div>
 
-            <form method="POST" action="../controlador/accion/act_reservar.php" class="formReserva">
+            <form method="POST" action="../controlador/accion/ajax_verSalones.php" class="formReserva">
                 <div class="apartar">
                     <div class="tituloCod">
                         <div id="flexear">
                             <h1>Código: Admin</h1>
                         </div>
                     </div>
-                    <div id="flexear">
+                        <div id="flexear">
                             <h2>Edificio</h2>
                             <input type="text" name="nombreEdificio" id="" value="Cienaga Grande" readonly>
                         </div>
@@ -104,8 +108,8 @@
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
                         <button id="reservar" value="reservar">RESERVAR</button>
-                        </form>
                 </div>
+            </form>
         </section>
 
         <footer class="pie-pagina">
@@ -135,4 +139,7 @@
         </footer>
 
 </body>
+    <script src="perfil.js"></script>
+    <script src="js/librerias/jquery-3.3.1.min.js"></script>
+
 </html>

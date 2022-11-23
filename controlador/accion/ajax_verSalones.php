@@ -13,6 +13,5 @@ a listar en la datatable todos los salones, haciendo uso del AJAX
 
     $salones = listarSalones($idEdifio);
     
-    echo $salones;
-
+    echo json_encode($salones);
 ?>

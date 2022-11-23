@@ -1,35 +1,27 @@
 $(document).ready(function() { 
-    ajaxVerUsuarios();
+    ajaxVerSalones();
 })
 
-function ajaxVerUsuarios(){
+function ajaxVerSalones(){
     $.ajax({
-        url: "../controlador/accion/ajax_verUsuarios.php",
+        url: "../controlador/accion/ajax_verSalones.php",
         success: function(result){ 
-           insertarUsuariosEnTabla(JSON.parse(result))
+           insertarSalonesEnTabla(JSON.parse(result))
         },
     error: function(xhr){
         //alert("Ocurrió un error: " + xhr.status + " " + xhr.statusText);
       }});
 }
 
-function ajaxRegistrarUsuario(nombre, correo, password, telefono, fechanac, sexo, pesokg, administrador){
-    $.ajax({
-        data: { 
-                   "nombre" : nombre,
-                   "correo" : correo,
-                   "password" : password,
-                   "telefono" : telefono,
-                   "fechanac" : fechanac,
-                   "sexo" : sexo,
-                   "pesokg" : pesokg,
-                   "administrador" : administrador
-            },
-            type: "POST",
-            dataType: "json",
-            url: "../controlador/accion/ajax_registrarUsuario.php",
-    success: function(result){
-        $('#modalCrearUsuario').modal('hide');
-        insertarUsuarioEnTabla(nombre, correo, password, telefono, fechanac, sexo, pesokg, administrador);
-    }})
+function insertarSalonesEnTabla(result){
+    let salones = ''
+    $.each(result, function(i) {
+        salones +='<tr id='+result[i].id+'>'
+        +'<td width="20" style="border: 1px solid #dddddd; text-align: left;padding: 8px;">'+result[i].ubicacion+'</td>'
+        +'<td width="20" style="border: 1px solid #dddddd; text-align: left;padding: 8px;">'+result[i].capacidad+'</td>'
+        +'</tr>'
+
+    })
+
+    $("#salonesRegistrados tbody").append(salones)
 }
