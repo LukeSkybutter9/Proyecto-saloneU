@@ -75,11 +75,11 @@
 
         <section class="contenedor">
             <div class="tabla">
-                <table id="salonesRegistrados" id="example" class="display" style="width: 100%">
+                <table id="salonesRegistrados" class="display" style="width: 100%">
                     <thead>
                         <tr>
                             <th id="izq">ubicación</th>
-                            <th id="izq">capacidad</th>
+                            <th id="der">capacidad</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -137,9 +137,7 @@
                 <small>&copy;2022 | <b>SALONEU</b> | Todos los derechos Reservados. | Acerca de <a  href="" class="fa-solid fa-circle-info">  </a></small>
             </div>
         </footer>
-
+        <script src="js/librerias/jquery-3.3.1.min.js"></script>
+        <script src="js/reservas.js"></script>
 </body>
-    <script src="perfil.js"></script>
-    <script src="js/librerias/jquery-3.3.1.min.js"></script>
-
 </html>

@@ -27,7 +27,7 @@ class ReservaDAO{
             $salon = new Salon(
                     $data_table[$indice]["idSalon"],
                     $data_table[$indice]["ubicacion"],
-                    $data_table[$indice]["capacidad"], 
+                    $data_table[$indice]["estado"], 
                     $data_table[$indice]["idEdificio"]
                     );
             array_push($salones,$salon);

@@ -9,14 +9,14 @@ class Salon
 {
     public $idSalon;
     public $ubicacion;
-    public $capacidad;
+    public $estado;
     public $idEdificio;
     
-    public function __construct($idSalon, $ubicacion, $capacidad, $idEdificio){
+    public function __construct($idSalon, $ubicacion, $estado, $idEdificio){
 
         $this->idSalon = $idSalon;
         $this->ubicacion = $ubicacion;
-		$this->capacidad = $capacidad;
+		$this->estado = $estado;
 		$this->idEdificio = $idEdificio;
     
     }
@@ -31,7 +31,7 @@ class Salon
         return $this->ubicacion;
     }
 
-    public function getcapacidad()
+    public function getestado()
     {
         return $this->correo;
     }
@@ -57,9 +57,9 @@ class Salon
         return $this;
     }
 
-    public function setcapacidad($capacidad)
+    public function setestado($estado)
     {
-        $this->capacidad = $capacidad;
+        $this->estado = $estado;
 
         return $this;
     }

@@ -38,7 +38,7 @@ class UsuarioDAO {
                         $data_table[$indice]["correo"],
                         $data_table[$indice]["password"],
                         $data_table[$indice]["telefono"],
-                        $data_table[$indice]["fechanac"],
+                        $data_table[$indice]["fechaNac"],
                         $data_table[$indice]["sexo"],
                         $data_table[$indice]["administrador"]
                         );
@@ -84,7 +84,7 @@ class UsuarioDAO {
                     $data_table[$indice]["correo"], 
                     $data_table[$indice]["password"],
                     $data_table[$indice]["telefono"],
-                    $data_table[$indice]["fechanac"],
+                    $data_table[$indice]["fechaNac"],
                     $data_table[$indice]["sexo"],
                     $data_table[$indice]["administrador"]
                     );

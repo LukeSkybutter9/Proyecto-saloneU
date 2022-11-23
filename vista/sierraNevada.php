@@ -20,14 +20,10 @@
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <script src="//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"></script>
-    <!--Logos-->
-    <!--<i class="fa-regular fa-house"></i>-->
-    <!--<i class="fa-regular fa-circle-info"></i>-->
-    <!--<i class="fa-regular fa-user"></i>-->
     <script src="https://kit.fontawesome.com/6081769558.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-    $('#example').dataTable( {
+        $('#example').dataTable( {
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
         },
@@ -77,7 +73,7 @@
                     <thead>
                         <tr>
                             <th id="izq">ubicación</th>
-                            <th id="izq">capacidad</th>
+                            <th id="der">disponibilidad</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -85,11 +81,12 @@
                     </tbody>
                 </table>
             </div>
+            
             <form method="POST" action="../controlador/accion/ajax_verSalones.php" class="formReserva">
                 <div class="apartar">
                     <div class="tituloCod">
                         <div id="flexear">
-                            <h1>Código: Admin</h1>
+                            <h1>Código: <?php echo $_SESSION['ID_USUARIO']?></h1>
                         </div>
                     </div>
                         <div id="flexear">
@@ -136,6 +133,6 @@
         </footer>
 
         <script src="js/librerias/jquery-3.3.1.min.js"></script>
-        <script src="js/perfil.js"></script>
+        <script src="js/reservas.js"></script>
 </body>
 </html>

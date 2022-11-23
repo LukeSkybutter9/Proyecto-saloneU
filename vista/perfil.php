@@ -1,10 +1,18 @@
+<?php
+   session_start();
+    if (!isset($_SESSION['ID_USUARIO'])) {
+        header("Location: login.html");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -16,21 +24,10 @@
     <!--<i class="fa-regular fa-circle-info"></i>-->
     <!--<i class="fa-regular fa-user"></i>-->
     <script src="https://kit.fontawesome.com/6081769558.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-    $('#example').dataTable( {
-        "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
-        },
-        dom: 'Bfrtip',
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
-        } );
-    } );
-    </script>
     <title>Inicio</title>
 </head>
+
+
 <body>
     <header>
         <div id="bloqIzq">
@@ -59,31 +56,30 @@
             </nav>
         </div>
     </header>
-
-
-    <div class="supahcontenedor">
-        <div style="margin-top:3%;margin-left: 20%;margin-right: 20%; border: 3px solid red;">
-            <h1>PERFIL USUARIO</h1>
-            <form action="">
-                <label for="">Codigo Estudiantil</label>
-                <input type="text" name="" id=""><br>
-                <label for="">Nombre</label>
-                <input type="text" name="" id=""><br>
-                <label for="">Correo</label>
-                <input type="text" name="" id=""><br>
-                <label for="">Contraseña</label>
-                <input type="text" name="" id=""><br>
-                <label for="">Telefono</label>
-                <input type="text" name="" id=""><br>
-                <label for="">Fecha de nacimiento</label>
-                <input type="text" name="" id=""><br>
-                <label for="">Sexo</label>
-                <input type="text" name="" id=""><br
-                
-
-            </form>
-        </div>
-    </div>
+    <section class="tablaUsuario">
+            <table class="table" id="usuariosRegistrados">
+                <thead>
+                    <tr>
+                    <th scope="col">Codigo Estudiantil</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                    <th scope="col">Sexo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th><?php echo $_SESSION['ID_USUARIO']?></th>
+                    <th><?php echo $_SESSION['NOMBRE_USUARIO']?></th>
+                    <th><?php echo $_SESSION['CORREO_USUARIO']?></th>
+                    <th><?php echo $_SESSION['TELEFONO_USUARIO']?></th>
+                    <th><?php echo $_SESSION['FECHANAC_USUARIO']?></th>
+                    <th><?php echo $_SESSION['SEXO_USUARIO']?></th>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
 <!--
     <footer class="pie-pagina">
         <div class="grupo1">
@@ -109,9 +105,6 @@
         <div class="grupo2">
             <small>&copy;2022 | <b>SALONEU</b> | Todos los derechos Reservados. | Acerca de <a  href="" class="fa-solid fa-circle-info">  </a></small>
         </div>
-    </footer>
--->
-    <script src="js/librerias/jquery-3.3.1.min.js"></script>
-    <script src="js/perfil.js"></script>
+    </footer>-->
 </body>
 </html>

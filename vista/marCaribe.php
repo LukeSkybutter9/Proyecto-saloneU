@@ -1,5 +1,5 @@
 <?php
-   session_start();
+session_start();
     if (!isset($_SESSION['ID_USUARIO'])) {
         header("Location: login.html");
     }
@@ -20,14 +20,10 @@
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <script src="//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"></script>
-    <!--Logos-->
-    <!--<i class="fa-regular fa-house"></i>-->
-    <!--<i class="fa-regular fa-circle-info"></i>-->
-    <!--<i class="fa-regular fa-user"></i>-->
     <script src="https://kit.fontawesome.com/6081769558.js" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function() {
-    $('#example').dataTable( {
+        $(document).ready(function(){
+        $('#example').dataTable( {
         "language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
         },
@@ -36,7 +32,7 @@
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
         } );
-    } );
+    });
     </script>
 </head>
 <body>
@@ -76,163 +72,41 @@
 
         <section class="contenedor">
             <div class="tabla">
-                <table id="example" class="display" style="width: 100%">
+                <table id="salonesRegistrados"  class="display" style="width: 100%">
                     <thead>
                         <tr>
-                            <th id="izq"># Salón</th>
-                            <th>Capacidad</th>
+                            <th id="izq">Ubicacion</th>
                             <th id="der">Disponibilidad</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><a href="">MCN-101</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-102</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-103</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-201</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-202</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-203</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-204</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-205</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-301</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-302</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-303</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-304</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCN-305</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-101</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-102</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-103</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-201</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-202</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-203</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-204</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-205</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-301</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-302</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-303</a></td>
-                            <td>30</td>
-                            <td>Disponible</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-304</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
-                        <tr>
-                            <td><a href="">MCS-305</a></td>
-                            <td>30</td>
-                            <td>Ocupado</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
 
-            <div class="apartar">
-                <h1>Código: Admin</h1>
-                <form action="" class="formReserva">
-                    <div id="flexear">
-                        <h2>Fecha y hora</h2>
-                        <input type="datetime-local" name="" id="fHora">
+            <form method="POST" action="../controlador/accion/ajax_verSalones.php" class="formReserva">
+                <div class="apartar">
+                    <div class="tituloCod">
+                        <div id="flexear">
+                            <h1>Código: <?php echo $_SESSION['ID_USUARIO']?></h1>
+                        </div>
                     </div>
-                    <div id="flexear">
-                        <h2>Asunto  </h2>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <button id="reservar" value="reservar">RESERVAR</button>
-                </form>
-            </div>
+                        <div id="flexear">
+                            <h2>Edificio</h2>
+                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Mar Caribe">
+                        </div>
+                        <div id="flexear">
+                            <h2>Fecha y hora</h2>
+                            <input type="datetime-local" name="fechaHora" id="fHora">
+                        </div>
+                        <div id="flexear">
+                            <h2>Asunto</h2>
+                            <textarea name="asunto" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button id="reservar" value="reservar">RESERVAR</button>
+                </div>
+            </form>
         </section>
 
         <footer class="pie-pagina">
@@ -260,5 +134,7 @@
                 <small>&copy;2022 | <b>SALONEU</b> | Todos los derechos Reservados. | Acerca de <a  href="" class="fa-solid fa-circle-info">  </a></small>
             </div>
         </footer>
+        <script src="js/librerias/jquery-3.3.1.min.js"></script>
+        <script src="js/reservas.js"></script>
 </body>
 </html>

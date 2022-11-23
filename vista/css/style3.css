@@ -1,0 +1,67 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: content-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    font-family: Roboto;
+}
+
+#flexear{
+    display: flex;
+    gap:20px
+}
+/* --------------------------Body----------------------*/
+table{
+    border: 1px solid gray;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid gray;
+}
+
+.tablaUsuario{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+
+
+
+
+
+
+/*--------------------------FUENTES-----------------------------*/
+
+@font-face {/*-------Antaro---------*/
+    font-family: Antaro;
+    src: url(../fuentes/Antaro.ttf);
+}
+
+@font-face {/*-------Stone Humanist SC---------*/
+    font-family: Stone Humanist SC;
+    src: url(../fuentes/StoneSansOSITCTTMedium.ttf);
+}
+
+@font-face {/*-------ITCMedium---------*/
+    font-family: ITCMedium;
+    src: url(../fuentes/StoneSansOSITCTTMedium.ttf);
+}
+
+@font-face {/*-------Roboto---------*/
+    font-family: Roboto;
+    src: url(../fuentes/roboto.regular.ttf);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
