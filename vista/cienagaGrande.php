@@ -148,5 +148,6 @@
         </footer>
         <script src="js/librerias/jquery-3.3.1.min.js"></script>
         <script src="js/reservas.js"></script>
+        <script src="js/actualizarValores.js"></script>
 </body>
 </html>
