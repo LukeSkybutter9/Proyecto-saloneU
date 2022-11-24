@@ -132,6 +132,6 @@
         <div class="grupo2">
             <small>&copy;2022 | <b>SALONEU</b> | Todos los derechos Reservados. | Acerca de <a  href="" class="fa-solid fa-circle-info">  </a></small>
         </div>
-    </footer>-->
+    </footer>
 </body>
 </html>
