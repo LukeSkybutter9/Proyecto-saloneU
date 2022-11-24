@@ -30,16 +30,16 @@ form{
 }
 /* --------------------------Body----------------------*/
 table{
-    border: 1px solid gray;
+    
     width: 80%;
     border-collapse: collapse;
     box-shadow: 1px 1px 5px rgb(99, 99, 99);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 th,td{
     padding: 20px;
-    border: 1px solid gray;
+    border-radius: 1px solid gray;
 }
 
 .tablaUsuario{
