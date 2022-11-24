@@ -29,3 +29,13 @@ function obtenerIdEdificio($nombreEdificio){
 
     return $idEdificio;
 }
+
+
+function listarReservas($idUsuario){
+
+    $dao = new reservaDAO();
+
+    $historial= $dao->listarReservas($idUsuario);
+
+    return $historial;
+}

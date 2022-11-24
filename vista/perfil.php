@@ -56,49 +56,53 @@
             </nav>
         </div>
     </header>
-    <section class="tablaUsuario">
-            <table class="table" id="usuariosRegistrados">
-                <thead>
-                    <tr>
-                    <th scope="col">Codigo Estudiantil</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Teléfono</th>
-                    <th scope="col">Edad</th>
-                    <th scope="col">Sexo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th><?php echo $_SESSION['ID_USUARIO']?></th>
-                    <th><?php echo $_SESSION['NOMBRE_USUARIO']?></th>
-                    <th><?php echo $_SESSION['CORREO_USUARIO']?></th>
-                    <th><?php echo $_SESSION['TELEFONO_USUARIO']?></th>
-                    <th><?php echo $_SESSION['FECHANAC_USUARIO']?></th>
-                    <th><?php echo $_SESSION['SEXO_USUARIO']?></th>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
+    
 
-    <section class="historialReserva">
-            <table class="table" id="usuariosRegistrados">
-                <thead>
+    <div class="container">
+        <h1>Datos personales</h1>
+        <section class="tablaUsuario">
+                <table class="table" id="usuariosRegistrados">
+                    <thead>
+                        <tr>
+                        <th scope="col">Codigo Estudiantil</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Fecha de nacimiento</th>
+                        <th scope="col">Sexo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Fecha de registro</th>
-                    <th scope="col">Código de reserva</th>
-                    <th scope="col">Asunto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr>
+                        <th id="idUsuario"><?php echo $_SESSION['ID_USUARIO']?></th>
+                        <th><?php echo $_SESSION['NOMBRE_USUARIO']?></th>
+                        <th><?php echo $_SESSION['CORREO_USUARIO']?></th>
+                        <th><?php echo $_SESSION['TELEFONO_USUARIO']?></th>
+                        <th><?php echo $_SESSION['FECHANAC_USUARIO']?></th>
+                        <th><?php echo $_SESSION['SEXO_USUARIO']?></th>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
 
+
+        <h1>Historial de reservas de <?php echo $_SESSION['NOMBRE_USUARIO']?> </h1>
+        <section class="historialReserva">
+                <table class="table" id="reservasRegistradas">
+                    <thead>
+                        <tr>
+                        <th scope="col">Código de reserva</th>
+                        <th scope="col">Fecha de registro</th>
+                        <th scope="col">Asunto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     
-                    </tr>
-                </tbody>
-            </table>
-    </section>
+                    </tbody>
+                </table>
+        </section>
+    </div>
+    
 
 
 
@@ -130,5 +134,7 @@
             <small>&copy;2022 | <b>SALONEU</b> | Todos los derechos Reservados. | Acerca de <a  href="" class="fa-solid fa-circle-info">  </a></small>
         </div>
     </footer>
+    <script src="js/librerias/jquery-3.3.1.min.js"></script>
+    <script src="js/historialReservas.js"></script>
 </body>
 </html>

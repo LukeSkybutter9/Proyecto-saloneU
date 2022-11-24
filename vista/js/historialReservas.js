@@ -3,13 +3,8 @@ $(document).ready(function() {
 });
 
 function ajaxVerHistorial(){
-    var nombreSalon = $("#nombreEdificio").val();
     $.ajax({
-        data: { 
-            "nombreEdificio" : nombreSalon
-        },
-        type: "POST",
-        url: "../controlador/accion/ajax_verHistorial.php",
+        url: "../controlador/accion/ajax_verHistorialReserva.php",
         success: function(result){ 
             insertarHistorialEnTabla(JSON.parse(result))
         },
@@ -21,11 +16,12 @@ function ajaxVerHistorial(){
 function insertarHistorialEnTabla(result){
     let Historial = ''
     $.each(result, function(i) {
-        Historial +='<tr id='+result[i].idSalon+'>'
-        +'<td style="border: 1px solid #dddddd;text-align:center;"><input type="radio" class="Historial" id='+result[i].idSalon+' name="selecSalon">'+result[i].ubicacion+'</td>'
-        +'<td style="border: 1px solid #dddddd;text-align:center;">'+result[i].estado+'</td>'
+        Historial +='<tr id='+result[i].idReserva+'>'
+        +'<td style="text-align:center;font-weight: bold;">RESERVA-'+result[i].idReserva+'</td>'
+        +'<td style="text-align:center;font-weight: bold;">'+result[i].fecha+'</td>'
+        +'<td style="text-align:center;font-weight: bold;">'+result[i].asunto+'</td>'
         +'</tr>';
     })
     
-    $("#HistorialRegistrados tbody").append(Historial)
+    $("#reservasRegistradas tbody").append(Historial)
 }

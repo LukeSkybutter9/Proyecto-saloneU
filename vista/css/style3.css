@@ -16,12 +16,12 @@ thead{
     background-color: #004A87;
     border-bottom: solid 5px;
     color: white;
-
 }
 
 tr:nth-child(){
     color:gray;
 }
+
 form{
     font-family: Roboto;
 }
@@ -38,7 +38,6 @@ body{
     font-family: Stone Humanist SC;
 }
 table{
-
     width: 80%;
     border-collapse: collapse;
     box-shadow: 1px 1px 5px rgb(99, 99, 99);
@@ -51,17 +50,28 @@ th,td{
 }
 
 .tablaUsuario{
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     display: flex;
     justify-content: center;
     font-family: Roboto;
+    width: 100%;
 }
 .historialReserva{
-    margin-top: 10%;
+    margin-top: 3%;
     display: flex;
     justify-content: center;
     font-family: Roboto;
     margin-bottom: 20%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }
 
 

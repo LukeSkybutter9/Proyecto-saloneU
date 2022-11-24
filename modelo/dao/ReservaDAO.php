@@ -67,4 +67,29 @@ class ReservaDAO{
         return $idEdificio;
     }
 
+    public function listarReservas($idUsuario){
+        $data_source = new DataSource();
+        
+        $data_table = $data_source->ejecutarConsulta("SELECT * FROM reserva WHERE idUsuario = :idUsuario", array(':idUsuario'=> $idUsuario));
+
+        $reserva=null;
+        $reservas=array();
+
+        foreach($data_table as $indice => $valor){
+            $reserva = new Reserva(
+                    $data_table[$indice]["idReserva"],
+                    $data_table[$indice]["fecha"],
+                    $data_table[$indice]["idUsuario"], 
+                    $data_table[$indice]["idEdificio"],
+                    $data_table[$indice]["idSalon"],
+                    $data_table[$indice]["idEstado"],
+                    $data_table[$indice]["asunto"]
+                    );
+            array_push($reservas,$reserva);
+        }
+        
+    return $reservas;
+    }
+
+
 }
