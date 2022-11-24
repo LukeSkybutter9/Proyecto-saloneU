@@ -21,19 +21,6 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <script src="//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"></script>
     <script src="https://kit.fontawesome.com/6081769558.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-        $('#example').dataTable( {
-        "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
-        },
-        dom: 'Bfrtip',
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
-        } );
-    } );
-    </script>
 </head>
 <body>
     <header>
@@ -69,11 +56,11 @@
 
         <section class="contenedor">
             <div class="tabla">
-                <table id="salonesRegistrados" class="display" style="width: 100%">
+                <table id="salonesRegistrados" style="width: 100%">
                     <thead>
                         <tr>
-                            <th id="izq">ubicación</th>
-                            <th id="der">disponibilidad</th>
+                            <th id="izq">UBICACIÓN</th>
+                            <th id="der">DISPONIBILIDAD</th>
                         </tr>
                     </thead>
                     <tbody>

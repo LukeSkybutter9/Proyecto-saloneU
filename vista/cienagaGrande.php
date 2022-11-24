@@ -78,8 +78,8 @@
                 <table id="salonesRegistrados" class="display" style="width: 100%">
                     <thead>
                         <tr>
-                            <th id="izq">ubicación</th>
-                            <th id="der">capacidad</th>
+                            <th id="izq">UBICACIÓN</th>
+                            <th id="der">DISPONIBILIDAD</th>
                         </tr>
                     </thead>
                     <tbody>
