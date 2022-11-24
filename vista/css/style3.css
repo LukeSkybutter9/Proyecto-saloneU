@@ -3,6 +3,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: content-box;
+
 }
 
 
@@ -10,7 +11,8 @@ a{
     text-decoration: none;
     color: white;
 }
- thead{
+
+thead{
     background-color: #004A87;
     border-bottom: solid 5px;
     color: white;
@@ -29,6 +31,12 @@ form{
     gap:20px
 }
 /* --------------------------Body----------------------*/
+body{
+    min-height: 1000px;
+    position: relative;
+    font-family: Stone Humanist SC;
+    
+}
 table{
     
     width: 80%;
@@ -47,6 +55,13 @@ th,td{
     display: flex;
     justify-content: center;
     font-family: Roboto;
+}
+.historialReserva{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    margin-bottom: 20%;
 }
 
 
