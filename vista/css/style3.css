@@ -3,6 +3,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: content-box;
+
 }
 
 
@@ -10,6 +11,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 thead{
     background-color: #004A87;
     border-bottom: solid 5px;
@@ -28,9 +30,15 @@ form{
     display: flex;
     gap:20px
 }
-/* --------------------------Body----------------------*/
+
+/*--------------------------Body----------------------*/
+body{
+    min-height: 1000px;
+    position: relative;
+    font-family: Stone Humanist SC;
+}
 table{
-    
+
     width: 80%;
     border-collapse: collapse;
     box-shadow: 1px 1px 5px rgb(99, 99, 99);
@@ -48,7 +56,13 @@ th,td{
     justify-content: center;
     font-family: Roboto;
 }
-
+.historialReserva{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    margin-bottom: 20%;
+}
 
 
 
