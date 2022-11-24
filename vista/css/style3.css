@@ -5,11 +5,21 @@
     box-sizing: content-box;
 }
 
+
 a{
     text-decoration: none;
     color: white;
 }
+ thead{
+    background-color: #004A87;
+    border-bottom: solid 5px;
+    color: white;
 
+ }
+ 
+ tr:nth-child(){
+    color:gray;
+ }
 form{
     font-family: Roboto;
 }
@@ -23,9 +33,12 @@ table{
     border: 1px solid gray;
     width: 80%;
     border-collapse: collapse;
+    box-shadow: 1px 1px 5px rgb(99, 99, 99);
+    border-radius: 10px;
 }
 
-th{
+th,td{
+    padding: 20px;
     border: 1px solid gray;
 }
 
