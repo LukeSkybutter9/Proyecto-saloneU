@@ -76,7 +76,7 @@
                 <div class="apartar">
                     <div class="tituloCod">
                         <div id="flexear">
-                            <h1>Código: <?php echo $_SESSION['ID_USUARIO']?></h1>
+                            <h1>Código:<?php echo $_SESSION['ID_USUARIO']?></h1>
                         </div>
                     </div>
                     <div class="contenedorForm">
