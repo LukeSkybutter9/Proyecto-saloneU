@@ -40,13 +40,14 @@ class ReservaDAO{
     public function registrarReserva(Reserva $reserva){
         $data_source = new DataSource();
         
-        $stmt1 = "INSERT INTO reserva VALUES (NULL,:fecha,:idUsuario,:idEdificio,:idSalon,NULL)"; 
+        $stmt1 = "INSERT INTO reserva VALUES (NULL,:fecha,:idUsuario,:idEdificio,:idSalon,NULL,:asunto)"; 
         
         $resultado = $data_source->ejecutarActualizacion($stmt1, array(
             ':fecha' => $reserva->getfecha(),
             ':idUsuario' => $reserva->getidUsuario(),
             ':idEdificio' => $reserva->getidEdificio(),
-            ':idSalon'=>$reserva->getidSalon()
+            ':idSalon'=>$reserva->getidSalon(),
+            ':asunto'=>$reserva->getAsunto()
             )
         ); 
 

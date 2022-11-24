@@ -1,5 +1,5 @@
 <?php
-   session_start();
+    session_start();
     if (!isset($_SESSION['ID_USUARIO'])) {
         header("Location: login.html");
     }
@@ -19,10 +19,6 @@
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <script src="//cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"></script>
-    <!--Logos-->
-    <!--<i class="fa-regular fa-house"></i>-->
-    <!--<i class="fa-regular fa-circle-info"></i>-->
-    <!--<i class="fa-regular fa-user"></i>-->
     <script src="https://kit.fontawesome.com/6081769558.js" crossorigin="anonymous"></script>
     <title>Inicio</title>
 </head>
