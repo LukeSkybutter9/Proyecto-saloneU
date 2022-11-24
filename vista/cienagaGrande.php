@@ -116,8 +116,8 @@
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                        <label id="actualizar" value="actualizar">Actualizar</label>
-                        <button type="submit" id="reservar" value="reservar">Reservar</button>
+                        <button id="actualizar" value="actualizar">ACTUALIZAR</button>
+                        <button id="reservar" value="reservar">RESERVAR</button>
                 </div>
             </form>
         </section>

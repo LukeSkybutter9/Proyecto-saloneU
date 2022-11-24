@@ -151,23 +151,16 @@ th{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 20%;
     padding: 20px;
     gap:20px;
-    align-items: center;
-    background-color: #004a87;
-    box-shadow: 1px 1px 5px rgb(99, 99, 99);
+    background-color: #1562a1;
     width: 75%;
 }
 
 .apartar h1{
     color: #c08e2d;
-}
-
-.contenedorForm{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 
@@ -229,15 +222,29 @@ th{
     height: 40px;
     background-color: #004a87 ;
     color: white;
-    box-shadow: 1px 1px 10px #c08e2d;
-    border: #004a87;
     font-weight: bold;
     font-size: 20px;
+    border-color: black;
 }
-
 #reservar:hover{
     background-color: #1562a1;
 }
+
+#actualizar:hover{
+    background-color: #1562a1;
+}
+#actualizar{
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    background-color: #004a87 ;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
 
 #flexear textarea{
     font-family: Roboto;
