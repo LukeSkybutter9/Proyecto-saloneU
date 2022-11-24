@@ -88,16 +88,13 @@
                     <th scope="col">Nombre</th>
                     <th scope="col">Fecha de registro</th>
                     <th scope="col">Código de reserva</th>
+                    <th scope="col">Asunto</th>
                     </tr>
                 </thead>
                 <tbody>
                 <tr>
 
-                    <th><?php echo $_SESSION['NOMBRE_USUARIO']?></th>
-                    <th><?php echo $_SESSION['']?></th>
-                    <th><?php echo $_SESSION['TELEFONO_USUARIO']?></th>
-                    <th><?php echo $_SESSION['FECHANAC_USUARIO']?></th>
-                    <th><?php echo $_SESSION['SEXO_USUARIO']?></th>
+                    
                     </tr>
                 </tbody>
             </table>
