@@ -113,7 +113,7 @@ session_start();
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                        <label id="actualizar" value="actualizar">ACTUALIZAR</label>
+                        <button id="actualizar" value="actualizar">ACTUALIZAR</button>
                         <button id="reservar" value="reservar">RESERVAR</button>
                 </div>
             </form>
