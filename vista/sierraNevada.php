@@ -79,9 +79,14 @@
                             <h1>Código: <?php echo $_SESSION['ID_USUARIO']?></h1>
                         </div>
                     </div>
+                    <div class="contenedorForm">
                         <div id="flexear">
-                            <h2>Edificio</h2>
-                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Sierra Nevada">
+                            <h2 style="margin-right: 10%;">Edificio</h2>
+                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Sierra Nevada" readonly disabled>
+                        </div>
+                        <div id="flexear">
+                            <h2 style="margin-right: 13%;">Salón</h2>
+                            <input type="text" class="radioSalon" id="radioSalon" value="">
                         </div>
                         <div id="flexear">
                             <h2>Fecha y hora</h2>
@@ -91,6 +96,8 @@
                             <h2>Asunto</h2>
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
+                    </div>
+                        <label id="actualizar" value="actualizar">ACTUALIZAR</label>
                         <button id="reservar" value="reservar">RESERVAR</button>
                 </div>
             </form>
@@ -121,8 +128,8 @@
                 <small>&copy;2022 | <b>SALONEU</b> | Todos los derechos Reservados. | Acerca de <a  href="" class="fa-solid fa-circle-info">  </a></small>
             </div>
         </footer>
-
         <script src="js/librerias/jquery-3.3.1.min.js"></script>
         <script src="js/reservas.js"></script>
+        <script src="js/actualizarValores.js"></script>
 </body>
 </html>

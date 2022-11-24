@@ -95,12 +95,17 @@
                 <div class="apartar">
                     <div class="tituloCod">
                         <div id="flexear">
-                            <h1>Código: Admin</h1>
+                            <h1>Código: <?php echo $_SESSION['ID_USUARIO']?></h1>
                         </div>
                     </div>
+                    <div class="contenedorForm">
                         <div id="flexear">
-                            <h2>Edificio</h2>
-                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Cienaga Grande" readonly>
+                            <h2 style="margin-right: 10%;">Edificio</h2>
+                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Cienaga Grande" readonly disabled>
+                        </div>
+                        <div id="flexear">
+                            <h2 style="margin-right: 13%;">Salón</h2>
+                            <input type="text" name="" id="" value="">
                         </div>
                         <div id="flexear">
                             <h2>Fecha y hora</h2>
@@ -110,6 +115,7 @@
                             <h2>Asunto</h2>
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
+                    </div>
                         <button id="reservar" value="reservar">RESERVAR</button>
                 </div>
             </form>
@@ -142,5 +148,6 @@
         </footer>
         <script src="js/librerias/jquery-3.3.1.min.js"></script>
         <script src="js/reservas.js"></script>
+        <script src="js/actualizarValores.js"></script>
 </body>
 </html>
