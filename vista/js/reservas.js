@@ -1,9 +1,9 @@
 $(document).ready(function() { 
     ajaxVerSalones();
-    var idSalon;
+    /*var idSalon;
     $("input").click(function(){  
        idSalon = $(this).attr("id");
-    });
+    });*/
 });
 
 function ajaxVerSalones(){
