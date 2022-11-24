@@ -10,16 +10,16 @@ a{
     text-decoration: none;
     color: white;
 }
- thead{
+thead{
     background-color: #004A87;
     border-bottom: solid 5px;
     color: white;
 
- }
- 
- tr:nth-child(){
+}
+
+tr:nth-child(){
     color:gray;
- }
+}
 form{
     font-family: Roboto;
 }
