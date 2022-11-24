@@ -143,6 +143,12 @@ th{
     margin-bottom: 20%;
 }
 
+.contenedorForm{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
 .tabla{
     margin-right: 5%;
 }
@@ -155,7 +161,7 @@ th{
     padding-top: 20%;
     padding: 20px;
     gap:20px;
-    background-color: #1562a1;
+    background-color: #004a87;
     width: 75%;
 }
 
@@ -224,7 +230,8 @@ th{
     color: white;
     font-weight: bold;
     font-size: 20px;
-    border-color: black;
+    border: #004a87;
+    box-shadow: 1px 1px 5px white;
 }
 #reservar:hover{
     background-color: #1562a1;
@@ -234,14 +241,19 @@ th{
     background-color: #1562a1;
 }
 #actualizar{
+    display: flex;
     border-radius: 5px;
     width: 200px;
     height: 40px;
-    background-color: #004a87 ;
+    align-items: center;
+    justify-content: center;
+    background-color: #004a87;
     color: white;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    border: #004a87;
+    box-shadow: 1px 1px 5px white;
     
 }
 
