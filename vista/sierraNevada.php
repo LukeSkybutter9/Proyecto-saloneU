@@ -98,7 +98,6 @@
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                        <label id="actualizar" value="actualizar">ACTUALIZAR</label>
                         <button type="submit" id="reservar" value="reservar">RESERVAR</button>
                 </div>
             </form>

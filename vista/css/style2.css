@@ -238,25 +238,6 @@ th{
     background-color: #1562a1;
 }
 
-#actualizar:hover{
-    background-color: #1562a1;
-}
-#actualizar{
-    display: flex;
-    border-radius: 5px;
-    width: 200px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    background-color: #004a87;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    border: #004a87;
-    box-shadow: 1px 1px 5px white;
-    
-}
 
 
 #flexear textarea{
