@@ -105,7 +105,7 @@
                         </div>
                         <div id="flexear">
                             <h2 style="margin-right: 13%;">Salón</h2>
-                            <input type="text" name="" id="" value="">
+                            <input type="text" class="radioSalon" id="radioSalon" value="">
                         </div>
                         <div id="flexear">
                             <h2>Fecha y hora</h2>
@@ -116,6 +116,7 @@
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
+                        <label id="actualizar" value="actualizar">ACTUALIZAR</label>
                         <button id="reservar" value="reservar">RESERVAR</button>
                 </div>
             </form>
