@@ -17,11 +17,11 @@ thead{
     border-bottom: solid 5px;
     color: white;
 
- }
- 
- tr:nth-child(){
+}
+
+tr:nth-child(){
     color:gray;
- }
+}
 form{
     font-family: Roboto;
 }
@@ -35,7 +35,6 @@ body{
     min-height: 1000px;
     position: relative;
     font-family: Stone Humanist SC;
-    
 }
 table{
     

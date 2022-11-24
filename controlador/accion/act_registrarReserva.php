@@ -17,13 +17,24 @@ a listar en la datatable todos los salones, haciendo uso del AJAX
     $idEdificio = obtenerIdEdificio($nombreEdificio); 
 
     $idSalon = $_POST['numSalon'];
+
+    $asunto = $_POST['asunto'];
     
-    $reserva = new Reserva(NULL,$fecha,$idUsuario,$idEdificio,$idSalon,NULL);
+    $reserva = new Reserva(NULL,$fecha,$idUsuario,$idEdificio,$idSalon,NULL,$asunto);
 
     $registro = registrarReserva($reserva);
     
     if($registro){
-        header("Location: ../../vista/principal.php");
+        if($idEdificio==1){
+            header("Location: ../../vista/sierraNevada.php");
+        }else if($idEdificio==2){
+            header("Location: ../../vista/cienagaGrande.php");
+        }else if($idEdificio==3){
+            header("Location: ../../vista/marCaribe.php");
+        }else{
+            header("Location: ../../vista/principal.php");
+        }
+        
     }else{
         echo $registro;
     }

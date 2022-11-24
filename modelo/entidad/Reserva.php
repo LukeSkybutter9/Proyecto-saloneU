@@ -13,9 +13,10 @@ class Reserva
     public $idEdificio;
     public $idSalon;
     public $idEstado;
+    public $asunto;
 
     
-    public function __construct($idReserva, $fecha, $idUsuario, $idEdificio,$idSalon, $idEstado){
+    public function __construct($idReserva, $fecha, $idUsuario, $idEdificio,$idSalon, $idEstado, $asunto){
 
         $this->idReserva = $idReserva;
         $this->fecha = $fecha;
@@ -23,6 +24,7 @@ class Reserva
 		$this->idEdificio = $idEdificio;
         $this->idSalon = $idSalon;
         $this->idEstado = $idEstado;
+        $this->asunto = $asunto;
     }
     
    // Métodos GET
@@ -40,12 +42,12 @@ class Reserva
         return $this->idUsuario;
     }
     
-     public function getidEdificio()
+    public function getidEdificio()
     {
         return $this->idEdificio;
     }
 
-	 public function getidSalon()
+	public function getidSalon()
     {
         return $this->idSalon;
     }
@@ -53,6 +55,11 @@ class Reserva
     public function getidEstado()
     {
         return $this->idEstado;
+    }
+
+    public function getAsunto()
+    {
+        return $this->asunto;
     }
 
     public function setidReserva($idReserva)
