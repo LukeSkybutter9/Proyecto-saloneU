@@ -75,8 +75,8 @@ session_start();
                 <table id="salonesRegistrados"  class="display" style="width: 100%">
                     <thead>
                         <tr>
-                            <th id="izq">Ubicacion</th>
-                            <th id="der">Disponibilidad</th>
+                            <th id="izq">UBICACIÓN</th>
+                            <th id="der">DISPONIBILIDAD</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -26,8 +26,8 @@ function insertarSalonesEnTabla(result){
     let salones = ''
     $.each(result, function(i) {
         salones +='<tr id='+result[i].idSalon+'>'
-        +'<td><input type="radio" class="salones" id='+result[i].idSalon+' name="selecSalon">'+result[i].ubicacion+'</td>'
-        +'<td>'+result[i].estado+'</td>'
+        +'<td style="border: 1px solid #dddddd; text-align:center;"><input type="radio" class="salones" id='+result[i].idSalon+' name="selecSalon">'+result[i].ubicacion+'</td>'
+        +'<td style="border: 1px solid #dddddd;text-align:center;">'+result[i].estado+'</td>'
         +'</tr>';
     })
     
