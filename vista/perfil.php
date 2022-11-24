@@ -80,7 +80,34 @@
                 </tbody>
             </table>
     </section>
-<!--
+
+    <section class="historialReserva">
+            <table class="table" id="usuariosRegistrados">
+                <thead>
+                    <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Fecha de registro</th>
+                    <th scope="col">Código de reserva</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                    <th><?php echo $_SESSION['NOMBRE_USUARIO']?></th>
+                    <th><?php echo $_SESSION['']?></th>
+                    <th><?php echo $_SESSION['TELEFONO_USUARIO']?></th>
+                    <th><?php echo $_SESSION['FECHANAC_USUARIO']?></th>
+                    <th><?php echo $_SESSION['SEXO_USUARIO']?></th>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+
+
+
+
     <footer class="pie-pagina">
         <div class="grupo1">
             
