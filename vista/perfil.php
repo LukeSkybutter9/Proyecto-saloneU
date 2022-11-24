@@ -52,6 +52,9 @@
                 <div class="conteBotones">
                     <a href="perfil.php" class="fa-solid fa-circle-user"><h3><?php echo $_SESSION['NOMBRE_USUARIO']?></h3></a>
                 </div>
+                <div class="conteBotones">
+                    <a href="../controlador/accion/act_logout.php"><h3>| Cerrar sesión</h3></a>
+                </div>
                 
             </nav>
         </div>
