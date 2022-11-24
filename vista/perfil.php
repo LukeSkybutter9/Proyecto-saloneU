@@ -47,10 +47,10 @@
         <div id="bloqDer">
             <nav class="opciones">
                 <div class="conteBotones">
-                    <a href="" class="fa-solid fa-house"><h3>Inicio |</h3></a>
+                <a href="principal.php" class="fa-solid fa-house"><h3>Inicio |</h3></a>
                 </div>
                 <div class="conteBotones">
-                    <a href="login.html" class="fa-solid fa-circle-user"><h3><?php echo $_SESSION['NOMBRE_USUARIO']?></h3></a>
+                    <a href="perfil.php" class="fa-solid fa-circle-user"><h3><?php echo $_SESSION['NOMBRE_USUARIO']?></h3></a>
                 </div>
                 
             </nav>
