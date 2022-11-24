@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     if (!isset($_SESSION['ID_USUARIO'])) {
         header("Location: login.html");
     }
@@ -88,7 +88,7 @@ session_start();
                 </table>
             </div>
 
-            <form method="POST" action="../controlador/accion/ajax_verSalones.php" class="formReserva">
+            <form method="POST" action="../controlador/accion/act_registrarReserva.php" class="formReserva">
                 <div class="apartar">
                     <div class="tituloCod">
                         <div id="flexear">
@@ -113,8 +113,8 @@ session_start();
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                        <label id="actualizar" value="actualizar">ACTUALIZAR</label>
-                        <button id="reservar" value="reservar">RESERVAR</button>
+                        <label id="actualizar" value="actualizar">Actualizar</label>
+                        <button type="submit" id="reservar" value="reservar">Reservar</button>
                 </div>
             </form>
         </section>

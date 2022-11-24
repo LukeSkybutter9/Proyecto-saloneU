@@ -1,5 +1,5 @@
 <?php
-   session_start();
+    session_start();
     if (!isset($_SESSION['ID_USUARIO'])) {
         header("Location: login.html");
     }
@@ -72,7 +72,7 @@
                 </table>
             </div>
             
-            <form method="POST" action="../controlador/accion/ajax_verSalones.php" class="formReserva">
+            <form method="POST" action="../controlador/accion/act_registrarReserva.php" class="formReserva">
                 <div class="apartar">
                     <div class="tituloCod">
                         <div id="flexear">
@@ -82,11 +82,11 @@
                     <div class="contenedorForm">
                         <div id="flexear">
                             <h2 style="margin-right: 10%;">Edificio</h2>
-                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Sierra Nevada" readonly disabled>
+                            <input type="text" name="nombreEdificio" id="nombreEdificio" value="Sierra Nevada" readonly>
                         </div>
                         <div id="flexear">
                             <h2 style="margin-right: 13%;">Salón</h2>
-                            <input type="text" class="radioSalon" id="radioSalon" value="">
+                            <input type="text" class="radioSalon" name="numSalon" id="radioSalon" value="">
                         </div>
                         <div id="flexear">
                             <h2>Fecha y hora</h2>
@@ -97,8 +97,8 @@
                             <textarea name="asunto" id="" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                        <label id="actualizar" value="actualizar">ACTUALIZAR</label>
-                        <button id="reservar" value="reservar">RESERVAR</button>
+                        <label id="actualizar" value="actualizar">Actualizar</label>
+                        <button type="submit" id="reservar" value="reservar">Reservar</button>
                 </div>
             </form>
         </section>

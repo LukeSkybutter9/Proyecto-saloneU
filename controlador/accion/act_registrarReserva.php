@@ -6,14 +6,26 @@ a listar en la datatable todos los salones, haciendo uso del AJAX
     session_start();
     
     require_once (__DIR__."/../mdb/mdbReserva.php");
+    require_once (__DIR__."/../../modelo/entidad/Reserva.php");
+
+    $fecha = $_POST['fechaHora'];
 
     $idUsuario = $_SESSION['ID_USUARIO'];
-
+    
     $nombreEdificio = $_POST['nombreEdificio'];
 
-    $idEdifio = obtenerIdEdificio($nombreEdificio); 
+    $idEdificio = obtenerIdEdificio($nombreEdificio); 
 
-    $salones = listarSalones($idEdifio);
+    $idSalon = $_POST['numSalon'];
     
-    echo json_encode($salones);
+    $reserva = new Reserva(NULL,$fecha,$idUsuario,$idEdificio,$idSalon,NULL);
+
+    $registro = registrarReserva($reserva);
+    
+    if($registro){
+        header("Location: ../../vista/principal.php");
+    }else{
+        echo $registro;
+    }
+
 ?>

@@ -36,6 +36,23 @@ class ReservaDAO{
     return $salones;
     }
 
+
+    public function registrarReserva(Reserva $reserva){
+        $data_source = new DataSource();
+        
+        $stmt1 = "INSERT INTO reserva VALUES (NULL,:fecha,:idUsuario,:idEdificio,:idSalon,NULL)"; 
+        
+        $resultado = $data_source->ejecutarActualizacion($stmt1, array(
+            ':fecha' => $reserva->getfecha(),
+            ':idUsuario' => $reserva->getidUsuario(),
+            ':idEdificio' => $reserva->getidEdificio(),
+            ':idSalon'=>$reserva->getidSalon()
+            )
+        ); 
+
+        return $resultado;
+    }
+
     public function obtenerIdPorNombre($nombreEdificio){
         $data_source = new DataSource();
 

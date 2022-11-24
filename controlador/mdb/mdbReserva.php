@@ -11,6 +11,15 @@ function listarSalones($idEdificio){
     return $salones;
 }
 
+function registrarReserva(Reserva $reserva){
+    
+    $dao=new ReservaDAO();
+
+    $reserva = $dao->registrarReserva($reserva);
+
+    return $reserva;
+}
+
 
 function obtenerIdEdificio($nombreEdificio){
 
