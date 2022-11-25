@@ -164,7 +164,8 @@ th,td{
 }
 /*--------------------------------------------------------------*/
 .contieneInput{
-    
+    grid: 100%;
+    align-items: left;
     
     margin-bottom: 20%;
 
