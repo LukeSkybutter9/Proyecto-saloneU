@@ -91,6 +91,7 @@
         </section>
 
         <h1>Datos personales</h1>
+        <a href="#" class="abrirModal" >Modificar</a>
         <section class="tablaUsuario">
                 <table class="table" id="usuariosRegistrados">
                     <thead>
