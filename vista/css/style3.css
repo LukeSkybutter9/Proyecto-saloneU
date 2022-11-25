@@ -98,6 +98,7 @@ th,td{
     gap: 1em;
     place-items: center;
     grid-auto-columns: 100%;
+    transition: .6s;
 }
 
 
@@ -108,20 +109,7 @@ th,td{
 }
 
 
-.modal__container{
-    width: 90%;
-    max-width: 600px;
-    max-height: 90%;
-    border-radius: 6px;
-    padding: 3em 2.5em;
-    background-color: #fff;
-    margin: auto;
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    transition: .6s;
-}
+
 
 .modal__title{
     margin-bottom:20px;
@@ -162,6 +150,7 @@ th,td{
     display: inline-block;
     font-weight: bold;
     transition: background-color .3s; 
+    
 }
 /*--------------------------------------------------------------*/
 .contieneInput{
