@@ -78,7 +78,7 @@
                         <input type="text" name="nombre" id="nombre" value="<?php echo $_SESSION['NOMBRE_USUARIO']?>" readonly>
                         <input type="text" name="correo" id="correo" value="<?php echo $_SESSION['CORREO_USUARIO']?>" readonly>
                         <input type="password" name="password" id="password" value="<?php echo $_SESSION['PASSWORD_USUARIO']?>">
-                        <input type="text" name="telefono" id="telefono" value="<?php echo $_SESSION['TELEFONO_USUARIO']?>">
+                        <input type="number" name="telefono" id="telefono" value="<?php echo $_SESSION['TELEFONO_USUARIO']?>">
                         <input type="text" name="fechaNac" id="fechaNac" value="<?php echo $_SESSION['FECHANAC_USUARIO']?>" readonly>
                         <input type="text" name="sexo" id="sexo" value="<?php echo $_SESSION['SEXO_USUARIO']?>" readonly>
                         <input type="text" name="admin" id="admin" value="<?php echo $_SESSION['ES_ADMIN']?>" readonly>
