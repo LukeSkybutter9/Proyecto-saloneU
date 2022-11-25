@@ -40,11 +40,11 @@ class ReservaDAO{
     public function registrarReserva(Reserva $reserva){
         $data_source = new DataSource();
         
-        $stmt1 = "INSERT INTO reserva VALUES (NULL,:fecha,:idUsuario,:idEdificio,:idSalon,NULL,:asunto)"; 
+        $stmt1 = "INSERT INTO reserva VALUES (NULL,:fecha,:idReserva,:idEdificio,:idSalon,NULL,:asunto)"; 
 
         $resultado = $data_source->ejecutarActualizacion($stmt1, array(
             ':fecha' => $reserva->getfecha(),
-            ':idUsuario' => $reserva->getidUsuario(),
+            ':idReserva' => $reserva->getidReserva(),
             ':idEdificio' => $reserva->getidEdificio(),
             ':idSalon'=>$reserva->getidSalon(),
             ':asunto'=>$reserva->getAsunto()
@@ -79,10 +79,10 @@ class ReservaDAO{
         return $idEdificio;
     }
 
-    public function listarReservas($idUsuario){
+    public function listarReservas($idReserva){
         $data_source = new DataSource();
         
-        $data_table = $data_source->ejecutarConsulta("SELECT * FROM reserva WHERE idUsuario = :idUsuario", array(':idUsuario'=> $idUsuario));
+        $data_table = $data_source->ejecutarConsulta("SELECT * FROM reserva WHERE idReserva = :idReserva", array(':idReserva'=> $idReserva));
 
         $reserva=null;
         $reservas=array();
@@ -91,7 +91,7 @@ class ReservaDAO{
             $reserva = new Reserva(
                     $data_table[$indice]["idReserva"],
                     $data_table[$indice]["fecha"],
-                    $data_table[$indice]["idUsuario"], 
+                    $data_table[$indice]["idReserva"], 
                     $data_table[$indice]["idEdificio"],
                     $data_table[$indice]["idSalon"],
                     $data_table[$indice]["idEstado"],
@@ -101,6 +101,19 @@ class ReservaDAO{
         }
         
     return $reservas;
+    }
+
+    public function eliminarReserva($idReserva){
+        $data_source = new DataSource();
+        
+        $stmt1 = "DELETE FROM reserva WHERE idReserva = :idReserva"; 
+        
+        $resultado = $data_source->ejecutarActualizacion($stmt1, array(
+            ':idReserva' => $idReserva
+            )
+        ); 
+
+        return $resultado;
     }
 
 

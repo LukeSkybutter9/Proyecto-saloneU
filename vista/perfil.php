@@ -123,6 +123,7 @@
                 <table class="table" id="reservasRegistradas">
                     <thead>
                         <tr>
+                        <th scope="col"></th>    
                         <th scope="col">Salón</th>    
                         <th scope="col">Código de reserva</th>
                         <th scope="col">Fecha de registro</th>
@@ -134,6 +135,14 @@
                     </tbody>
                 </table>
         </section>
+
+        <div class="contieneInput">
+            <h3>RESERVA-</h3>
+            <form method="POST" action="">
+                <input name="idReserva" class="radioReserva" type="text">
+                <button type="submit" value="ELIMINAR">ELIMINAR</button>
+            </form>
+        </div>
     </div>
 
     <footer class="pie-pagina">

@@ -45,3 +45,10 @@ function actualizarEstadoSalon($idSalon){
 
     $dao->actualizarEstadoSalon($idSalon);
 }
+
+function eliminarReserva($idReserva){
+
+    $dao = new ReservaDAO();
+
+    $dao->eliminarReserva($idReserva);
+}

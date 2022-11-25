@@ -5,7 +5,7 @@
     require_once (__DIR__.'/../mdb/mdbReserva.php');
     $idReserva = $_GET['idReserva'];
     
-    eliminarUsuario($idUsuario);
+    eliminarReserva($idReserva);
 
-    header("Location: ../../vista/administradorUsuarios.php");
+    header("Location: ../../vista/perfil.php");
     
