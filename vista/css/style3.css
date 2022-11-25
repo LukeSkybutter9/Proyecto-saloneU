@@ -86,20 +86,6 @@ th,td{
     transition: opacity .6s;
 }
 
-.modal__container{
-    width: 90%;
-    background-color: white;
-    margin:auto;
-    max-width: 600px;
-    max-height: 600px;
-    border-radius: 6px;
-    padding: 3em 2.5em;
-    display:grid;
-    gap: 1em;
-    place-items: center;
-    grid-auto-columns: 100%;
-    transition: .6s;
-}
 
 
 .modal--show{
@@ -109,7 +95,20 @@ th,td{
 }
 
 
-
+.modal__container{
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    background-color: #004A87;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition: .6s;
+}
 
 .modal__title{
     margin-bottom:20px;
