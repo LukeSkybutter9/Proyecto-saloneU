@@ -106,7 +106,7 @@
                         </div>
                         <div id="flexear">
                             <h2 style="margin-right: 13%;">Salón</h2>
-                            <input type="text" class="radioSalon" id="radioSalon" value="">
+                            <input type="text" class="radioSalon" name="numSalon" id="radioSalon" value="">
                         </div>
                         <div id="flexear">
                             <h2>Fecha y hora</h2>

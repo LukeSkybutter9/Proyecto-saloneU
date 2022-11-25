@@ -24,6 +24,8 @@ a listar en la datatable todos los salones, haciendo uso del AJAX
 
     $registro = registrarReserva($reserva);
     
+    actualizarEstadoSalon($idSalon);
+    
     if($registro){
         if($idEdificio==1){
             header("Location: ../../vista/sierraNevada.php");

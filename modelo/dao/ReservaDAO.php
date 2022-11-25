@@ -41,7 +41,7 @@ class ReservaDAO{
         $data_source = new DataSource();
         
         $stmt1 = "INSERT INTO reserva VALUES (NULL,:fecha,:idUsuario,:idEdificio,:idSalon,NULL,:asunto)"; 
-        
+
         $resultado = $data_source->ejecutarActualizacion($stmt1, array(
             ':fecha' => $reserva->getfecha(),
             ':idUsuario' => $reserva->getidUsuario(),
@@ -50,9 +50,21 @@ class ReservaDAO{
             ':asunto'=>$reserva->getAsunto()
             )
         ); 
-
         return $resultado;
     }
+    
+
+    public function actualizarEstadoSalon($idSalon){
+        $data_source = new DataSource();
+        
+        $stmt2 = "UPDATE salon SET estado = :estado WHERE idSalon= :idSalon"; 
+
+        $data_source->ejecutarActualizacion($stmt2, array(
+            ':estado' => "Ocupado",
+            ':idSalon' => $idSalon
+        ));
+    }
+
 
     public function obtenerIdPorNombre($nombreEdificio){
         $data_source = new DataSource();

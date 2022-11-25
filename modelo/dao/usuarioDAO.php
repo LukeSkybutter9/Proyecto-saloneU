@@ -12,10 +12,9 @@ require_once ("DataSource.php");  //La clase que permite conectarse a la Base de
 require_once (__DIR__."/../entidad/Usuario.php");
 
 class UsuarioDAO {
-     
      //Con este metodo se hace la validacion para saber si el usuario ingresado
      //en el login se encuentra registrado en la base de datos
-	 public function autenticarUsuario($codEdst, $password){
+	public function autenticarUsuario($codEdst, $password){
         
         //Se crea la instancia de DataSource para hacer la conexión
         $data_source = new DataSource();
@@ -66,7 +65,7 @@ class UsuarioDAO {
             )
         ); 
 
-      return $resultado;
+        return $resultado;
     }
 
     public function verUsuarios(){
@@ -104,7 +103,7 @@ class UsuarioDAO {
             )
         ); 
 
-      return $resultado;
+        return $resultado;
     }
 
     public function verUsuarioPorId($codEdst){
@@ -148,7 +147,7 @@ class UsuarioDAO {
             )
         ); 
 
-      return $resultado;
+        return $resultado;
     }
 
 }

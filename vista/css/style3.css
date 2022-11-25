@@ -51,14 +51,13 @@ th,td{
 
 .tablaUsuario{
     margin-top: 5%;
-    margin-bottom: 10%;
     display: flex;
     justify-content: center;
     font-family: Roboto;
     width: 100%;
 }
 .historialReserva{
-    margin-top: 3%;
+    margin-top: 13%;
     display: flex;
     justify-content: center;
     font-family: Roboto;
@@ -72,6 +71,78 @@ th,td{
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+
+.modal__container{
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal__title{
+    margin-bottom:20px;
+}
+
+
+.izq{
+    display:flex;
+    flex-direction:column;
+    float:left;
+    margin-right:20px;
+    gap:5px;
+}
+
+.der{
+    display:flex;
+    flex-direction:column;
+    float:right;
+    gap:5px;
+}
+
+#modificar{
+    margin-top:20px;
+    border-radius:20px;
+    background-color: #004A87;
+    color:white;
+    width:40%;
+    height: 20px;
+}
+
+
+.modal_close{
+    text-decoration: none;
+    color:  white;
+    background-color: #004A87;
+    padding: 1em 3em;
+    border: 1px solid white;
+    display: inline-block;
+    font-weight: bold;
 }
 
 

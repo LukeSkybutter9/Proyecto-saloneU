@@ -32,10 +32,16 @@ function obtenerIdEdificio($nombreEdificio){
 
 
 function listarReservas($idUsuario){
-
     $dao = new reservaDAO();
 
     $historial= $dao->listarReservas($idUsuario);
 
     return $historial;
+}
+
+function actualizarEstadoSalon($idSalon){
+
+    $dao = new reservaDAO();
+
+    $dao->actualizarEstadoSalon($idSalon);
 }

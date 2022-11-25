@@ -24,7 +24,6 @@
     <title>Inicio</title>
 </head>
 
-
 <body>
     <header>
         <div id="bloqIzq">
@@ -47,7 +46,7 @@
                 <a href="principal.php" class="fa-solid fa-house"><h3>Inicio </h3></a>
                 </div>
                 <div class="conteBotones">
-                    <a href="perfil.php" class="fa-solid fa-circle-user"><h3><?php echo $_SESSION['NOMBRE_USUARIO']?> </h3></a>
+                    <a href="perfil.php" class="fa-solid fa-circle-user"><h3><?php echo $_SESSION['NOMBRE_USUARIO']?></h3></a>
                 </div>
                 <div class="conteBotones">
                     <a href="../controlador/accion/act_logout.php"><h3> Cerrar Sesión</h3></a>
@@ -59,6 +58,38 @@
     
 
     <div class="container">
+        <section class="modal">
+                <div class="modal__container">
+                    <h2 class="modal__title">MODIFICAR PERFIL</h2>
+                    <form method="POST" action="../controlador/accion/act_modificarPerfil.php">
+                        <div class="contenedorForm">
+                        <div class="izq">
+                        <label for="">Codigo estudiantil</label>
+                        <label for="">Nombre</label>
+                        <label for="">Correo</label>
+                        <label for="">Contraseña</label>
+                        <label for="">Telefono</label>
+                        <label for="">Fecha Nacimiento</label>
+                        <label for="">Sexo</label>
+                        <label for="">Es Admin</label>
+                        </div>
+                        <div class="der">
+                        <input type="text" name="codEdst" id="codEdst" value="<?php echo $_SESSION['ID_USUARIO']?>" readonly>
+                        <input type="text" name="nombre" id="nombre" value="<?php echo $_SESSION['NOMBRE_USUARIO']?>" readonly>
+                        <input type="text" name="correo" id="correo" value="<?php echo $_SESSION['CORREO_USUARIO']?>" readonly>
+                        <input type="password" name="password" id="password" value="<?php echo $_SESSION['PASSWORD_USUARIO']?>">
+                        <input type="text" name="telefono" id="telefono" value="<?php echo $_SESSION['TELEFONO_USUARIO']?>">
+                        <input type="text" name="fechaNac" id="fechaNac" value="<?php echo $_SESSION['FECHANAC_USUARIO']?>" readonly>
+                        <input type="text" name="sexo" id="sexo" value="<?php echo $_SESSION['SEXO_USUARIO']?>" readonly>
+                        <input type="text" name="admin" id="admin" value="<?php echo $_SESSION['ES_ADMIN']?>" readonly>
+                        </div>
+                        </div>
+                        <button id="modificar" type="submit" value="Modificar">Modificar</button>
+                    </form>
+                    <a href="" class="modal__close">Cerrar modal</a>
+                </div>
+        </section>
+
         <h1>Datos personales</h1>
         <section class="tablaUsuario">
                 <table class="table" id="usuariosRegistrados">
@@ -84,13 +115,14 @@
                     </tbody>
                 </table>
         </section>
-
+        <a href="#" class="abrirModal" >Modificar</a>
 
         <h1>Historial de reservas de <?php echo $_SESSION['NOMBRE_USUARIO']?> </h1>
         <section class="historialReserva">
                 <table class="table" id="reservasRegistradas">
                     <thead>
                         <tr>
+                        <th scope="col">Salón</th>    
                         <th scope="col">Código de reserva</th>
                         <th scope="col">Fecha de registro</th>
                         <th scope="col">Asunto</th>
@@ -102,12 +134,6 @@
                 </table>
         </section>
     </div>
-    
-
-
-
-
-
 
     <footer class="pie-pagina">
         <div class="grupo1">
@@ -136,5 +162,6 @@
     </footer>
     <script src="js/librerias/jquery-3.3.1.min.js"></script>
     <script src="js/historialReservas.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
