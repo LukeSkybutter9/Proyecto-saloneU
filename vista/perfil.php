@@ -60,6 +60,9 @@
     <div class="container">
         <section class="modal">
                 <div class="modal__container">
+                    <div class="xCerrar">
+                        <a href="" class="modal__close">X</a>
+                    </div>
                     <h2 class="modal__title">MODIFICAR PERFIL</h2>
                     <form method="POST" action="../controlador/accion/act_modificarPerfil.php">
                         <div class="contenedorForm">
@@ -84,14 +87,18 @@
                         <input type="text" name="admin" id="admin" value="<?php echo $_SESSION['ES_ADMIN']?>" readonly>
                         </div>
                         </div>
-                        <button id="modificar" type="submit" value="Modificar">Modificar</button>
+                        <div class="botonModificar">
+                            <button id="modificar" type="submit" value="Modificar">Modificar</button>
+                        </div>
                     </form>
-                    <a href="" class="modal__close">Cerrar modal</a>
+                    
                 </div>
         </section>
 
         <h1>Datos personales</h1>
+        <div class="contieneModi">
         <a href="#" class="abrirModal" >Modificar</a>
+        </div>
         <section class="tablaUsuario">
                 <table class="table" id="usuariosRegistrados">
                     <thead>
@@ -116,9 +123,16 @@
                     </tbody>
                 </table>
         </section>
-        <a href="#" class="abrirModal" >Modificar</a>
+        
 
-        <h1>Historial de reservas de <?php echo $_SESSION['NOMBRE_USUARIO']?> </h1>
+        <h1 id="hisRe">Historial de reservas de <?php echo $_SESSION['NOMBRE_USUARIO']?> </h1>
+        <div class="contieneInput">
+            <h3>RESERVA-</h3>
+            <form method="POST" action="../controlador/accion/act_eliminarReserva.php">
+                <input name="idReserva" class="radioReserva" type="text">
+                <button type="submit" id="eliminar" value="ELIMINAR">Eliminar</button>
+            </form>
+        </div>
         <section class="historialReserva">
                 <table class="table" id="reservasRegistradas">
                     <thead>
@@ -135,14 +149,6 @@
                     </tbody>
                 </table>
         </section>
-
-        <div class="contieneInput">
-            <h3>RESERVA-</h3>
-            <form method="POST" action="../controlador/accion/act_eliminarReserva.php">
-                <input name="idReserva" class="radioReserva" type="text">
-                <button type="submit" value="ELIMINAR">ELIMINAR</button>
-            </form>
-        </div>
     </div>
 
     <footer class="pie-pagina">

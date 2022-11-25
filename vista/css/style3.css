@@ -50,18 +50,19 @@ th,td{
 }
 
 .tablaUsuario{
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     font-family: Roboto;
     width: 100%;
 }
+
 .historialReserva{
-    margin-top: 13%;
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     font-family: Roboto;
-    
+    margin-bottom: 20%;
     width: 100%;
 }
 
@@ -83,15 +84,11 @@ th,td{
     display: flex;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .6s;
 }
-
-
 
 .modal--show{
     opacity: 1;
     pointer-events: unset;
-    transition: .6s;
 }
 
 
@@ -100,18 +97,19 @@ th,td{
     max-width: 600px;
     max-height: 90%;
     border-radius: 6px;
-    padding: 3em 2.5em;
+    padding: 1em 1.5em;
     background-color: #004A87;
+    color: white;
     margin: auto;
     display: flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    transition: .6s;
 }
 
 .modal__title{
     margin-bottom:20px;
+    margin-top: 3%;
 }
 
 
@@ -140,36 +138,66 @@ th,td{
 }
 
 
-.modal_close{
+.modal__close{
     text-decoration: none;
     color:  white;
     background-color: #004A87;
-    padding: 1em 3em;
-    border: 1px solid white;
+    padding: 10px 5px;
     display: inline-block;
     font-weight: bold;
-    transition: background-color .3s; 
-    
+    border-radius: 6px;
 }
+
+.abrirModal{
+    background-color: #004A87;
+    width: 100px;
+    height: 20px;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.contieneModi{
+    width: 80%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
 /*--------------------------------------------------------------*/
 .contieneInput{
     grid: 100%;
     align-items: left;
     display: flex;
-    margin-bottom: 20%;
-
+    width: 80%;
+    margin-top: 3%;
+    align-items: center;
 }
 
-#ELIMINAR{
+#eliminar{
     background-color: #004A87;
     cursor: pointer;
     border: none;
-    padding: 16px 32px;
+    padding: 10px 5px;
     color:white;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
-    position: relative;
-    border-radius: 12px;
+    border-radius: 6px;
+}
+
+#hisRe{
+    margin-top: 10%;
+}
+
+.botonModificar{
+    width: 100%;
+    justify-content: center;
+
+}
+
+.xCerrar{
+    width: 100%;
+    display: flex;
+    justify-content: right;
 }
 
 /*--------------------------FUENTES-----------------------------*/

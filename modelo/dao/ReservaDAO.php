@@ -44,7 +44,7 @@ class ReservaDAO{
 
         $resultado = $data_source->ejecutarActualizacion($stmt1, array(
             ':fecha' => $reserva->getfecha(),
-            ':idReserva' => $reserva->getidUsuario(),
+            ':idUsuario' => $reserva->getidUsuario(),
             ':idEdificio' => $reserva->getidEdificio(),
             ':idSalon'=>$reserva->getidSalon(),
             ':asunto'=>$reserva->getAsunto()
