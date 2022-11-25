@@ -83,7 +83,9 @@ th,td{
     display: flex;
     opacity: 0;
     pointer-events: none;
+    transition: opacity .6s;
 }
+
 .modal__container{
     width: 90%;
     background-color: white;
@@ -98,9 +100,11 @@ th,td{
     grid-auto-columns: 100%;
 }
 
+
 .modal--show{
     opacity: 1;
     pointer-events: unset;
+    transition: opacity .6s;
 }
 
 
@@ -156,6 +160,7 @@ th,td{
     border: 1px solid white;
     display: inline-block;
     font-weight: bold;
+    transition: background-color .3s; 
 }
 
 
