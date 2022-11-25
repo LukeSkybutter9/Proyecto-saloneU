@@ -137,7 +137,7 @@
                 <table class="table" id="reservasRegistradas">
                     <thead>
                         <tr>
-                        <th scope="col"></th>    
+                        <th scope="col">Opción</th>    
                         <th scope="col">Salón</th>    
                         <th scope="col">Código de reserva</th>
                         <th scope="col">Fecha de registro</th>
