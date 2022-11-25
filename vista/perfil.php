@@ -138,7 +138,7 @@
 
         <div class="contieneInput">
             <h3>RESERVA-</h3>
-            <form method="POST" action="">
+            <form method="POST" action="../controlador/accion/act_eliminarReserva.php">
                 <input name="idReserva" class="radioReserva" type="text">
                 <button type="submit" value="ELIMINAR">ELIMINAR</button>
             </form>

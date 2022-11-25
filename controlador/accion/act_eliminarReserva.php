@@ -3,7 +3,7 @@
     session_start();
     
     require_once (__DIR__.'/../mdb/mdbReserva.php');
-    $idReserva = $_GET['idReserva'];
+    $idReserva = $_POST['idReserva'];
     
     eliminarReserva($idReserva);
 

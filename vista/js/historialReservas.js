@@ -17,7 +17,7 @@ function insertarHistorialEnTabla(result){
     let Historial = ''
     $.each(result, function(i) {
         Historial +='<tr id='+result[i].idReserva+'>'
-        +'<td style="text-align:center;font-weight: bold;"<input type="radio" class="salones" id='+result[i].idReserva+' name="selecReserva" onclick="valorIdReserva(this)"</td>'
+        +'<td style="text-align:center;font-weight: bold;"<input type="radio" class="reservas" id='+result[i].idReserva+' name="selecReserva" onclick="valorIdReserva(this)"</td>'
         +'<td style="text-align:center;font-weight: bold;">SALON-'+result[i].idSalon+'</td>'
         +'<td style="text-align:center;font-weight: bold;">RESERVA-'+result[i].idReserva+'</td>'
         +'<td style="text-align:center;font-weight: bold;">'+result[i].fecha+'</td>'
